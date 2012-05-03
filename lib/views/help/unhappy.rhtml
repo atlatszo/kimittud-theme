@@ -1,61 +1,39 @@
-<% @title = "Nem elÈgedett a kˆzÈrdek˚ adatigÈnylÈssel?" %>
+<% @title = "El√©gedetlen a kapott v√°lasszal?" %>
 
-
-<% if !@info_request.nil? %>
-<h1>Nem el&eacute;gedett az adatig&eacute;nyl&eacute;s&eacute;re ('<%=request_link(@info_request) %>') kapott v&aacute;lasszal?
-</h1>
-<% else %>
-<h1>Nem el&eacute;gedett a v&aacute;lasszal?</h1>
+<% if @info_request.nil? %>
+<%= render :partial => 'sidebar' %>
+<div id="left_column_flip">
 <% end %>
 
-<p>Ha ...</p>
+<% if !@info_request.nil? %>
+<h1>Nem el√©gedett a(z) '<%=request_link(@info_request) %>') adatig√©nyl√©s√©re kapott v√°lasszal?
+</h1>
+<% else %>
+<h1>El√©gedetlen a kapott v√°lasszal?</h1>
+<% end %>
+
+<p>Ha...</p>
 
 <ul>
-<li>a v&aacute;laszt nem kapta meg 20 munkanapon bel&uuml;l,</li>
-<li>nem kapta meg az &ouml;sszes k&eacute;rt inform&aacute;ci&oacute;t <strong>vagy</strong></li>
-<li>v&aacute;lasz&aacute;t elutas&iacute;tott&aacute;k, de a jogszab&aacute;lyban meghat&aacute;rozott indokol&aacute;s n&eacute;lk&uuml;l,</li>
+<li>nem kapott v√°laszt 15 (+15) munkanapon bel√ºl,</li>
+<li>nem kapta meg az √∂sszes k√©rt inform√°ci√≥t <strong>vagy</strong></li>
+<li>v√°lasz√°t elutas√≠tott√°k, de a jogszab√°lyban meghat√°rozott indokol√°s n√©lk√ºl,</li>
 </ul>
 
-<p>... akkor</p>
+<p>...akkor</p>
 
 <ol>
-<li>a k&ouml;zint&eacute;zm&eacute;nytıl <strong>belsı fel&uuml;lvizsg&aacute;latot</strong> k&eacute;rhet.</li>
-<li>Ha ez sem seg&iacute;t, panasz&aacute;val az <strong>adatv&eacute;delmi biztoshoz</strong> fordulhat.</li>
-<li>Mindk&eacute;t esetben <strong>egy&eacute;b eszk&ouml;z&ouml;ket is haszn&aacute;lhat</strong>, hogy k&eacute;rd&eacute;s&eacute;re v&aacute;laszt kapjon.</li>
+<li>¬ß¬ß¬ß</li>
+<li>¬ß¬ß¬ß</li>
+<li>¬ß¬ß¬ß</li>
 </ol>
 
-<h1 id="internal_review">1. Belsı fel&uuml;lvizsg&aacute;lat k&eacute;r&eacute;se <a class="hover_a" href="#internal_review">#</a> </h1>
+</dl>
 
-<p>
-<% if !@info_request.nil? %> <%= link_to "KÈrjen belsı fel¸lvizsg·latot", show_response_no_followup_url(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup", :class => 'link_button_green' %>, majd &iacute;rjon egy &uuml;zenetet, amelyben k&eacute;ri, hogy az adott k&ouml;zint&eacute;zm&eacute;ny vizsg&aacute;lja fel&uuml;l az ig&eacute;nyl&eacute;st. <% else %> A <%= site_name %> megfelelı oldal&aacute;nak als&oacute; r&eacute;sz&eacute;n v&aacute;lassza a &quot;belsı fel&uuml;lvizsg&aacute;lat kezdem&eacute;nyez&eacute;se&quot; lehetıs&eacute;get. Ezut&aacute;n &iacute;rjon egy &uuml;zenetet, amelyben k&eacute;ri az ig&eacute;nyl&eacute;s belsı fel&uuml;lvizsg&aacute;lat&aacute;t. Megadhatja az ig&eacute;nyl&eacute;sre mutat&oacute; hivatkoz&aacute;st is, hogy vil&aacute;gos legyen, hogy melyik ig&eacute;nyl&eacute;srıl is van pontosan sz&oacute;. <% end %>
-</p>
+<p>A <strong>k√∂vetkez≈ë r√©szben</strong> az <a href="/help/officers">adatig√©nyl√©sre v√°laszol√≥ adatgazd√°kn√°l dolgoz√≥ munkat√°rsaknak sz√≥l√≥</a> r√∂vid √∂sszefoglal√≥t olvashatja. Ha ez √∂nt nem √©rinti, olvassa el, <a href="/help/helpus">hogyan seg√≠theti a mi munk√°nkat</a>.
 
-<p>A belsı fel&uuml;lvizsg&aacute;latnak v&eacute;grehajt&aacute;s&aacute;nak gyorsnak kell lennie. Ha ez 20 munkanapn&aacute;l hosszabb idıt vesz ig&eacute;nybe, a k&ouml;zint&eacute;zm&eacute;nynek &iacute;r&aacute;sban t&aacute;j&eacute;koztatnia kell &Ouml;nt, &eacute;s az eg&eacute;sz nem vehet 40 napn&aacute;l hosszabb idıt ig&eacute;nybe (l&aacute;sd a <a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/detailed_specialist_guides/foi_good_practice_guidance_5.pdf">j&oacute; gyakorlatra vonatkoz&oacute; &uacute;tmutat&oacute;t</a>). Ezut&aacute;n megkapja az eredetileg k&eacute;rt inform&aacute;ci&oacute;t vagy a fel&uuml;lvizsg&aacute;lat megerıs&iacute;tette az eredeti d&ouml;nt&eacute;st.
-</p>
+  <div id="hash_link_padding"></div>
 
-<h1 id="complaining">2. Panasz k&uuml;ld&eacute;se az adatv&eacute;delmi biztos r&eacute;sz&eacute;re<a class="hover_a" href="#complaining">#</a> </h1>
-
-<p>Ha a k&ouml;zint&eacute;zm&eacute;nyn&eacute;l lefolytatott belsı fel&uuml;lvizsg&aacute;lat ut&aacute;n sem el&eacute;gedett, panasz&aacute;val az adatv&eacute;delmi biztoshoz fordulhat. Ehhez olvassa el az adatv&eacute;delmi biztos honlapj&aacute;n tal&aacute;lhat&oacute; <a href="http://www.ico.gov.uk/complaints/freedom_of_information.aspx">Inform&aacute;ci&oacute;szabads&aacute;ggal kapcsolatos panaszok</a> c&iacute;m˚ dokumentumot. Amennyiben sk&oacute;t k&ouml;zint&eacute;zm&eacute;nytıl ig&eacute;nyelt k&ouml;z&eacute;rdek˚ adatot, a <a href="http://www.itspublicknowledge.info/YourRights/HowToAppeal/Appeal.asp">sk&oacute;t adatv&eacute;delmi biztoshoz fordulhat</a>.
-</p>
-
-<p>Ahhoz, hogy a relev&aacute;ns inform&aacute;ci&oacute;k egyszer˚bben eljussanak az adatv&eacute;delmi biztoshoz, <% if !@info_request.nil? %> megadhatja az ig&eacute;nyl&eacute;sre mutat&oacute; hivatkoz&aacute;st <strong><%=h main_url(request_url(@info_request)) %></strong> <% else %> megadhatja az ig&eacute;nyl&eacute;sre mutat&oacute; hivatkoz&aacute;st a <%= site_name %> <% end %> weboldalon panasz&aacute;ban vagy kinyomtathatja az ig&eacute;nyl&eacute;s&eacute;t tartalmaz&oacute; oldalt &eacute;s az &ouml;sszes csatolt f&aacute;jlt.
-</p>
-
-<p>A <%= site_name %> ebben a szakaszban nem k&eacute;pes az ig&eacute;nyl&eacute;s kezel&eacute;s&eacute;re - az egybıl az adatv&eacute;delmi biztos rendszer&eacute;be ker&uuml;l. Az ig&eacute;nyl&eacute;shez magyar&aacute;z&oacute; jegyzetet f˚zhet, hogy t&aacute;j&aacute;koztassa az &eacute;rdeklıdıket az &uuml;gy alakul&aacute;s&aacute;r&oacute;l.</p>
-
-<p>Figyelmeztet&eacute;s. Az adatv&eacute;delmi biztosn&aacute;l v&aacute;r&oacute;list&aacute;n vannak az elint&eacute;zetlen &uuml;gyek, &iacute;gy ak&aacute;r &eacute;vekbe is ker&uuml;lhet, hogy hat&aacute;rozat sz&uuml;lessen. Ebben a szakaszban el kell fogadnia, hogy nem fog gyorsan hozz&aacute;jutni a k&iacute;v&aacute;nt inform&aacute;ci&oacute;hoz. T&aacute;mogathatod az inform&aacute;ci&oacute; szabads&aacute;g&aacute;nak megval&oacute;s&iacute;t&aacute;s&aacute;ra ir&aacute;nyul&oacute; harcot vagy csak &uacute;gy v&eacute;led, hogy &eacute;rdemes kiv&aacute;rni az eredm&eacute;nyt. Az inform&aacute;ci&oacute;hoz <strong>m&aacute;s eszk&ouml;z&ouml;kkel</strong> is hozz&aacute;juthatsz...</p>
-
-<h1 id="other_means">3. Egy&eacute;b eszk&ouml;z&ouml;k bevet&eacute;se annak &eacute;rdek&eacute;ben, hogy k&eacute;rd&eacute;s&eacute;re v&aacute;laszt kapjon <a class="hover_a" href="#other_means">#</a> </h1>
-
-<p>A probl&eacute;ma megold&aacute;s&aacute;t vagy kutat&aacute;s&aacute;t m&aacute;sk&eacute;ppen is folytathatja.
-
-<ul>
-<li>Ny&uacute;jtson be <strong>&uacute;j k&ouml;z&eacute;rdek˚ adatig&eacute;nyl&eacute;st</strong>, amelyben &ouml;sszes&iacute;tett inform&aacute;ci&oacute;kat k&eacute;r vagy az elutas&iacute;tott ig&eacute;nyl&eacute;s t&aacute;rgy&aacute;hoz k&ouml;zvetetten kapcsol&oacute;d&oacute; dokument&aacute;ci&oacute;t k&eacute;ri. Ha elakadt, <a href="/help/contact">forduljon hozz&aacute;nk &ouml;tlet&eacute;rt</a>.</li>
-<li>Ha az &uuml;gyben b&aacute;rmilyen <strong>m&aacute;s k&ouml;zint&eacute;zm&eacute;ny</strong> vagy &aacute;llami tulajdon&uacute; v&aacute;llalat is &eacute;rintett, a k&ouml;z&eacute;rdek˚ adatig&eacute;nyl&eacute;st nekik c&iacute;mezze.</li>
-<li>&Iacute;rjon <strong>orsz&aacute;ggy˚l&eacute;si k&eacute;pviselıj&eacute;nek</strong> vagy egy&eacute;b politikusnak az <a href="http://www.writetothem.com">&Iacute;rjNekik</a> weboldalon kereszt&uuml;l, &eacute;s k&eacute;rje seg&iacute;ts&eacute;g&eacute;t, hogy v&aacute;laszt kapjon k&eacute;rd&eacute;s&eacute;re. Az orsz&aacute;ggy˚l&eacute;si k&eacute;pviselık k&ouml;zvetlen&uuml;l &iacute;rhatnak a minisztereknek vagy a miniszt&eacute;riumoknak, illetve az als&oacute;h&aacute;zban &iacute;rott k&eacute;rd&eacute;st tehetnek fel. A helyi &ouml;nkorm&aacute;nyzatok k&eacute;pviselıi k&ouml;zvetlen&uuml;l fordulhatnak a polg&aacute;rmesteri hivatal tisztviselıj&eacute;hez.</li>
-<li>Forduljon <strong>m&aacute;s kutat&oacute;khoz</strong>, akik az &Ouml;n elk&eacute;pzel&eacute;seihez hasonl&oacute; k&eacute;rd&eacute;sekkel foglalkoznak. Ak&aacute;r ezt a weboldalt b&ouml;ng&eacute;szve is r&aacute;tal&aacute;lhat ilyen szem&eacute;lyekre; vegye fel a kapcsolatot b&aacute;rmely regisztr&aacute;lt felhaszn&aacute;l&oacute;val az adott oldalr&oacute;l. Internetes f&oacute;rumokon vagy csoportokn&aacute;l is keresg&eacute;lhet. Ha helyi &uuml;hyrıl van sz&oacute;, keresse fel a <a href="http://www.groupsnearyou.com">K&ouml;rny&eacute;kbeliH&iacute;rek</a> weboldalt, ahol megtal&aacute;lhatja a megfelelı f&oacute;rumot.</li>
-<li><strong>Tegyen &iacute;g&eacute;retet</strong> az <a href="http://www.pledgebank.com">&Iacute;g&eacute;retBank</a> rendszerben, hogy m&aacute;sok is &Ouml;nnel tartsanak. P&eacute;ld&aacute;ul megszervezhet egy megbesz&eacute;l&eacute;st a k&ouml;zint&eacute;zm&eacute;ny dolgoz&oacute;ival,  vagy l&eacute;trehozhat egy kisebb akci&oacute;csoportot.
-</ul>
-
-
-
+<% if @info_request.nil? %>
+</div>
+<% end %>

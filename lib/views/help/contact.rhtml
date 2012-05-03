@@ -1,42 +1,37 @@
-<% @title = "Kapcsolatfelvétel" %>
+<% @title = "Kapcsolat" %>
 
 <%= foi_error_messages_for :contact %>
 
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
 <h1><%= @title %></h1>
 
 <div id="contact_preamble">
 
     <% if !flash[:notice] %>
-        <h2>Hat&oacute;s&aacute;ggal val&oacute; kapcsolatfelv&eacute;tel k&ouml;z&eacute;rdekű adat megszerz&eacute;se c&eacute;lj&aacute;b&oacute;l</h2>
+        <h2>Közérdekű adatot szeretne megismerni?</h2>
         <ul>
-            <li><a href="/new">Navig&aacute;ljon ide</a>, ha Magyarorsz&aacute;g valamely k&ouml;zint&eacute;zm&eacute;ny&eacute;től nyilv&aacute;nosan k&iacute;v&aacute;n adatot ig&eacute;nyelni.</li>
-
-            <li>
-            Szem&eacute;lyes jellegű inform&aacute;ci&oacute;ra van sz&uuml;ks&eacute;ge saj&aacute;t mag&aacute;val kapcsolatosan? Olvassa el az <a href="/help/requesting#data_protection">adatv&eacute;delemről</a> sz&oacute;l&oacute; s&uacute;g&oacute;oldalunkat.
-            </li>
+            <li><a href="/new">Kattintson ide</a>, ha valamely állami, önkormányzati vagy más közfeladatot ellátó szervétől, intézményétől szeretne nyilvánosan adatot igényelni.</li>
         </ul>
 
-        <h2>Probl&eacute;ma felvet&eacute;se a korm&aacute;nyzat r&eacute;sz&eacute;re</h2>
-
-        <ul>
-            <li><a href="http://www.writetothem.com">&Iacute;rjon orsz&aacute;ggyűl&eacute;si k&eacute;pviselőj&eacute;nek, helyi &ouml;nkorm&aacute;nyzati k&eacute;pviselőnek vagy egy&eacute;b k&eacute;pviselőnek</a>.
-            <li>A <a href="http://www.number10.gov.uk/">Number 10</a> (minisztereln&ouml;k hivatalos weboldala) j&oacute; kiindul&aacute;si pont, ha a k&ouml;zponti korm&aacute;nyzat r&eacute;sz&eacute;re szeretne valamilyen probl&eacute;m&aacute;t felvetni. </li>
-        </ul>
-
+       
 
     <% end %>
 
-    <h2>Kapcsolatfelv&eacute;tel a KiMitTud csapat&aacute;val</h2>
+    <h2>Kapcsolatfelvétel a kimittud.atlatszo.hu weboldal, a KiMitTud csapatával</h2>
     <% if !flash[:notice] %>
             <ul>
             <li>
-            K&eacute;rj&uuml;k, elősz&ouml;r olvassa el a <a href="/help/about">s&uacute;g&oacute; oldalt</a>, mivel előfordulhat, hogy k&eacute;rd&eacute;s&eacute;re hamarabb v&aacute;laszt tal&aacute;l. 
+            Kérjük, először olvassa végig a <a href="/help/about">súgó témákat</a>, mivel előfordulhat, hogy kérdésére ott azonnal választ talál. 
             </li>
             
-            <li>Szeretn&eacute;nk, ha meg&iacute;rn&aacute; weboldalunk haszn&aacute;lat&aacute;val kapcsolatos tapasztalatait. Ehhez t&ouml;ltse ki az al&aacute;bbi űrlapot vagy &uuml;zenet&eacute;t a(z) <a                href="mailto:<%=@contact_email%>"><%=@contact_email%></a> e-mail c&iacute;mre is elk&uuml;ldheti.
+            <li>Szeretnénk, ha megírná weboldalunk használatával kapcsolatos tapasztalatait. Ehhez töltse ki az alábbi űrlapot vagy üzenetét a <a href="mailto:<%=@contact_email%>"><%=@contact_email%></a> e-mail c&iacute;mre is elküldheti.
             </li>
 
-            <li>Mi egy <strong>j&oacute;t&eacute;konys&aacute;gi szervezet</strong> vagyunk, &eacute;s nem korm&aacute;nyzati int&eacute;zm&eacute;ny.</li>
+            <li>Ezt a weboldalt az <a href="http://www.atlatszo.hu">atlatszo.hu</a> üzemelteti.
+</li>
+  </dd>
             </ul>
     <% end %>
 </div>
@@ -45,47 +40,46 @@
 
     <% if not @user %>
         <p>
-            <label class="form_label" for="contact_name">Az &Ouml;n neve:</label>
+            <label class="form_label" for="contact_name">Az ön neve:</label>
             <%= f.text_field :name, :size => 20 %> (vagy <%= link_to "jelentkezzen be", signin_url(:r => request.request_uri) %>)
         </p>
 
         <p>
-            <label class="form_label" for="contact_email">Az &Ouml;n e-mail c&iacute;me:</label>
+            <label class="form_label" for="contact_email">Az ön e-mailcíme:</label>
             <%= f.text_field :email, :size => 20 %>
         </p>
     <% end %>
 
     <p>
-        <label class="form_label" for="contact_subject">T&aacute;rgy:</label> 
+        <label class="form_label" for="contact_subject">Tárgy:</label> 
         <%= f.text_field :subject, :size => 50 %>
     </p>
 
     <p>
-        <label class="form_label" for="contact_message">&Uuml;zenet a weboldalra:</label> 
+        <label class="form_label" for="contact_message">Üzenet:</label> 
         <%= f.text_area :message, :rows => 10, :cols => 60 %>
     </p>
 
     <% if !@last_request.nil? %>
         <p>
-            <label class="form_label" for="contact_message">Hivatkoz&aacute;s csatol&aacute;sa az adatig&eacute;nyl&eacute;shez:</label> 
+            <label class="form_label" for="contact_message">Hivatkozás csatolása az adatigényléshez:</label> 
             <%=request_link(@last_request) %> <%= submit_tag "eltávolítás", :name => 'remove' %>
         </p>
     <% end %> <% if !@last_body.nil? %>
         <p>
-            <label class="form_label" for="contact_message">Hivatkoz&aacute;s csatol&aacute;sa a hat&oacute;s&aacute;ghoz:</label> 
+            <label class="form_label" for="contact_message">Hivatkozás csatolása a hat&oacute;sághoz:</label> 
             <%=public_body_link(@last_body) %> <%= submit_tag "eltávolítás", :name => 'remove' %>
         </p>
     <% end %>
 
     <p class="form_note">
-    Kiz&aacute;r&oacute;lag <strong>technikai probl&eacute;m&aacute;k</strong> megold&aacute;s&aacute;hoz tudunk seg&iacute;ts&eacute;get ny&uacute;jtani, illetve az inform&aacute;ci&oacute; szabads&aacute;g&aacute;r&oacute;l sz&oacute;l&oacute; t&ouml;rv&eacute;nnyel kapcsolatos k&eacute;rd&eacute;seire tudunk v&aacute;laszt adni. Ha a korm&aacute;nyzattal k&iacute;v&aacute;n kapcsolatba l&eacute;pni, l&aacute;sd az oldal felső r&eacute;sz&eacute;t.
+    Kizár&oacute;lag <strong>technikai problémák</strong> megoldásához tudunk seg&iacute;tséget ny&uacute;jtani, illetve az §§§ törvénnyel kapcsolatos kérdéseire tudunk választ adni. Ha állami, önkormányzati vagy más közfeladatot ellátó szervvel, intézménnyel kíván kapcsolatba lépni, akkor <a href="/new">kattintson ide</a>.
     </P>
 
 
     <div class="form_button">
-        <%= hidden_field_tag(:submitted_contact_form, 1) %> <%= submit_tag "Üzenet a jótékonysági szervezetnek" %> &lt;-- ezt az oldalt mi &uuml;zemeltetj&uuml;k &eacute;s nem az &aacute;llam!
-    </div>
+        <%= hidden_field_tag(:submitted_contact_form, 1) %> <%= submit_tag "Üzenet küldése" %>
 
 <% end %>
 
-
+</div>

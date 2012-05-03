@@ -1,4 +1,4 @@
-﻿<% @title = "Adatvédelmi kérdések" %>
+<% @title = "Adatvédelmi kérdések" %>
 
 <%= render :partial => 'sidebar' %>
 
@@ -9,20 +9,20 @@
   <dt id="email_address">Ki láthatja az én e-mailcímemet? <a href="#email_address">#</a> </dt>
 
   <dd><p>E-mailcímét senkinek nem adjuk ki - kivéve, ha azt a törvény előírja vagy ön külön kéri. Ez arra az adatgazdára is vonatkozik, amelynek az igénylést küldi.  Az adatgazdánál csak egy @kimittud.org végű e-mailcím jelenik meg, amelyet az adott igényléshez hoztunk létre.  </p>
-  <p>Ha weboldalunk egy másik felhasználójának küld üzenetet, akkor a címzett látni fogja az ön e-mail címét. Erről minden esetben tájékoztatjuk önt.</p>
+  <p>Ha weboldalunk egy másik felhasználójának küld üzenetet, akkor a címzett látni fogja az ön e-mailcímét. Erről minden esetben tájékoztatjuk önt.</p>
   </dd>
 
   <dt id="nasty_spam">Postaládámat el fogja árasztani a levélszemét? <a href="#nasty_spam">#</a> </dt>
-  <dd>Szó nincs róla. Ha feliratkozik a KiMitTud.org weboldalon, csak az ön által beküldött adatigénylésekkel kapcsolatosan küldünk önnek e-maileket, valamint e-mailben igazoljuk vissza feliratkozását. Ezen felül csak az ön által külön engedélyezett esetekben küldünk önnek e-mail üzenetet. E-mailcímét semmilyen körülmények közt nem adjuk tovább vagy adjuk el harmadik fél részére - kivéve, ha azt jogszabály írja elő vagy ön kéri.
+  <dd>Szó nincs róla. Ha feliratkozik a kimittud.atlatszo.hu weboldalon, csak az ön által beküldött adatigénylésekkel kapcsolatosan küldünk önnek e-maileket, valamint e-mailben igazoljuk vissza feliratkozását. Ezen felül csak az ön által külön engedélyezett esetekben küldünk önnek e-mail üzenetet. E-mailcímét semmilyen körülmények közt nem adjuk tovább vagy adjuk el harmadik fél részére - kivéve, ha azt jogszabály írja elő vagy ön kéri.
   </dd>
 
   <dt id="public_request">Miért jelenik meg a weboldalon nyilvánosan a nevem és az igénylésem? <a href="#public_request">#</a> </dt>
 
   <dd>
-  <p>Adatigénylését azért tesszük közzé itt a weboldalon, hogy azt bárki elolvashassa és az ön által talált információkat felhasználhassa. Az adatigényléseket - kivételes esetektől eltekintve - nem is töröljük (<a href="#delete_requests">további részletek</a>).
+  <p>Adatigénylését azért tesszük közzé itt a weboldalon, hogy azt bárki elolvashassa és az ön által talált információkat felhasználhassa. Az adatigényléseket - kivételes esetektől eltekintve - <a href="#delete_requests">nem is töröljük</a>.
   </p>
   <p>
-  Az ön neve hozzá van rendelve az adatigényléséhez, tehát az igénylésen a neve is szerepelni fog. A jogszabály persze lehetőséget ad arra, hogy adatot akár névtelenül is lehet igényelni. Az adatgazda nem vizsgálhatja, hogy az adatigénylő kicsoda és milyen célra kívánja az adatot felhasználni. Névtelen igény esetén azonban a megtagadással szemben nehezen érvényesíthető bármilyen jogorvoslat, ezért azt ezen az oldalon nem támogatjuk. 
+  Az ön neve hozzá van rendelve az adatigényléséhez, ezért az igénylésen a neve is szerepelni fog. A jogszabály persze lehetőséget ad arra, hogy adatot akár névtelenül is lehet igényelni. Az adatgazda nem vizsgálhatja, hogy az adatigénylő kicsoda és milyen célra kívánja az adatot felhasználni. Névtelen igény esetén azonban a megtagadással szemben nehezen érvényesíthető bármilyen jogorvoslat, ezért azt ezen az oldalon nem támogatjuk. 
   </p>
  
   </dd>
@@ -31,57 +31,42 @@
 
 
   <dd>
-  <p>Kérjük, hogy ne használjon álnevet, még ha a jogszabályi előírások ezzel kapcsolatban. Épp azt akarjuk elérni ezzel a w, hogy. </p>
+  <p>Kérjük, hogy ne használjon álnevet, ön is átlátható információkat akar kapni az adatigénylés során, legyen ön is nyílt.</p>
 
-<p>Ugyanakkor ez az útmutató azt is tartalmazza, hogy a közintézmény számára javasolható, hogy az egyértelműen álnéven írt igénylésekre is választ adjon. Hivatkozzon erre a kitételre, ha a közintézmény egy igénylést álnév használata miatt elutasítana.</p>
+<p>Ugyanakkor tény, hogy álnév használata esetén sem tagadhatja meg az adatgazda, hogy válaszoljon az adatigénylésre.</p>
 
-<p>Legyen körültekintő. Ha a közintézmény a jó gyakorlatot követve válaszol is igénylésére, az álnév használata miatt ön azonban nem tud esetleges panaszával később az adatvédelmi biztoshoz fordulni igénylésének kezelésével kapcsolatosan.
-</p>
+<p>Legyen azonban körültekintő. Ha az adatgazda álnéven benyújtott igénylésre nem vagy nem megfelelően válaszol, az álnév használata miatt azonban nem tud jogosrvoslattal élni.</p>
 
-<p>Az álnév helyett számos jó megoldás létezik.</p>
+<p>Az álnév helyett számos jó megoldás létezik az igénylés benyújtására:</p>
 
 <ul>
-<li>Használja nevét más formában. Az útmutató szerint Dr. Kovács Béla Tamás érvényes igénylést nyújthat be például &quot;Kovács Béla&quot;, &quot;Kovács B. T.&quot; vagy &quot;Dr. Kovács&quot; néven, nevét azonban  <strong>nem</strong> használhatja &quot;Béla&quot; vagy &quot;K. B. T.&quot; formában. 
-</li>
-<li>Nők használhatják leánykori nevüket is.</li>
-<li>A legtöbb esetben olyan nevet érdemes használnia, amely &quot;széles körben ismert/gyakran használt&quot;, és amely alapján azonosítani lehet önt.
-<li>Használja egy szervezet nevét, a vállalat nevét, egy vállalat kereskedelmi nevét vagy egy egyéni vállalkozás kereskedelmi nevét.
+<li>Használja nevét más formában. Pl. Dr. Kovács Béla Tamás helyett &quot;Kovács Béla&quot; vagy &quot;Kovács B. Tamás&quot; formában.</li>
+<li>Ha a jelenlegi neve nem egyezik a szülezési nevével, használja a születési nevét.</li>
+<li>Használja a szervezet vagy cég nevét, amelynek nevében benyújtja az adatigénylést.
 <li>Kérjen meg valaki mást, hogy az ön nevében nyújtsa be az igénylést. 
-<li>Ha végképp nem tudja, hogy mit tegyen, megkérhet bennünket is, hogy az igénylést ön helyett elküldjük. Ilyen esetben kérjük, <a href="/help/contact">lépjen velünk kapcsolatba</a>, és magyarázza el, hogy az igénylést miért nem tudja saját maga benyújtani és miért nem tudja ismerőseit sem megkérni. Természetesen nincsen kapacitásunk arra, hogy minden ilyen kérést teljesítsük.
+<li>Ha végképp nem tudja, hogy mit tegyen, megkérhet bennünket is, hogy az igénylést ön helyett elküldjük. Ilyen esetben kérjük, <a href="/help/contact">lépjen velünk kapcsolatba</a>, és magyarázza el, hogy az igénylést miért nem tudja saját maga benyújtani és miért nem tudja ismerőseit sem megkérni. Természetesen nincsen kapacitásunk arra, hogy minden ilyen kérést teljesítsük, de ha fontosnak látjuk, meg fogjuk tenni.
 </ul>
 
-<p>Kérjük, hogy ne próbálkozzon más személy adatainak használatával.</p>
+<p>Fontos: semmiképpen ne adjon be adatigénylést más személy adatainak használatával.</p>
 
 </dd>
 
-<dt id="full_address">Levelezési címemet is elkérték! <a href="#full_address">#</a> </dt>
+<dt id="full_address">Az adatgazda elkérte a lakcímemet - muszáj megadjam?<a href="#full_address">#</a> </dt>
 
 <dd>
-<p>Ha egy közintézmény az ön teljes lakcímét kéri, válaszolja azt, hogy az információ szabadságáról szóló törvény 8.1.b bekezdése &quot;levelezési cím&quot; megadását írja elő, amely lehet akár az ön által használt e-mail cím is. 
-</p>
-<p>
-Az Igazságügyi Minisztérium <a href="http://www.justice.gov.uk/guidance/foi-procedural-what.htm">útmutatója szerint</a>: <em>&quot;A papír alapú levelezés mellett az elektronikusan (pl. e-mailben) továbbított igénylések is elfogadhatók ... Ha egy igénylés e-mailben érkezik, és postai cím nincsen megadva, az e-mail cím minősül válaszcímnek.&quot;</em>
-</p>
-<p>Ha ez még mindig nem lenne elég, az adatvédelmi biztos által kiadott, <a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/practical_application/foi_hints_for_practitioners_handing_foi_and_eir_requests_2008_final.pdf">útmutató szakemberek részére</a> című dokumentum szerint <em>&quot;Bármilyen levelezés minősülhet adatigénylésnek. Ha ez írásban történik (ide tartozik az e-mail is), olvasható, az igénylő neve és a válaszcím (amely lehet elektronikus is) fel van tüntetve, illetve tartalmazza a kért információ leírását, akkor a jogszabály hatálya alá tartozónak kell tekinteni.&quot;</em>
-</p>
+<p>Ha egy adatgazda az ön lakcímét kéri, válaszolja azt, hogy ezt nem kötelessége megadni, mert a jogszabályi keretek szerint elegendő, ha ön az e-mailcímét adja meg. Azonban kérdezzen rá, hogy miért kérik el a címet, előfordulhat, hogy azért, mert csak papíron áll rendelkezésre a kért információ. Ebben az esetben először is próbálja meg rávenni az adatgazdát, hogy szkenneljék be az érintett dokumentumokat.</p>
+
+<p>Ha ez nem vezet eredményre, akkor sem szükséges, hogy a lakcímét adja meg, elegendő egy olyan levelezési címet, ahol eléri önt a küldemény. Ebben az esetben azonban az igénylésében a &quot;Postai úton kapok választ&quot; lehetőséget jelölje meg.</p>
 </dd>
 
-<dt id="postal_answer">Nem, a postai címemet kérik, hogy papíron küldhessék el a választ! <a href="#postal_answer">#</a> </dt>
-
-<dd>
-<p>Ha egy közintézménynek csak papíron áll rendelkezésre a kért információ, előfordulhat, hogy elkérik az ön postai címét. Először is próbálja meg rávenni a közintézményt, hogy szkenneljék be az érintett dokumentumokat. Akár azt is felajánlhatja, hogy a közintézményt <a href="http://www.whatdotheyknow.com/request/car_parking_charges_policy_and_a#outgoing-532">megajándékozza egy lapolvasóval</a>, és lehet, hogy ilyenkor mégis előkerül a saját készülékük.</p>
-
-<p>Ha ez nem vezet eredményre, és ön inkább közvetlenül megadja postai címét, igénylésére vonatkozóan válassza ki a &quot;Postai úton kapok választ&quot; lehetőséget. Ehhez külön e-mail címet biztosítunk önnek.</p>
-</dd>
-
-<dt id="delete_requests">Előfordulhat, hogy a KiMitTud törli igénylésemet vagy megváltoztatja a nevemet?  <a href="#delete_requests">#</a> </dt>
+<dt id="delete_requests">Előfordulhat, hogy a kimittud.atlatszo.hu törli az adatigénylésemet vagy megváltoztatja a nevemet?  <a href="#delete_requests">#</a> </dt>
 
 <dd>
 
-<p>A KiMitTud a közérdekű adatigénylések állandó, nyilvános archívuma. Előfordulhat, hogy egy igénylésre adott válasz az ön számára már nem érdekes, másnak azonban még hasznos lehet. Ezen megfontolás miatt igénylést nem törlünk.
+<p>A kimittud.atlatszo.hu weboldal a közérdekű adatigénylések állandó, nyilvános archívuma. Előfordulhat, hogy egy igénylésre adott válasz az ön számára már nem érdekes, másnak azonban még hasznos lehet. Ezen megfontolás miatt igénylést nem törlünk.
 </p>
 
-<p>Kivételes körülmények között előfordulhat, hogy a weboldalon eltávolítjuk vagy megváltoztatjuk az ön nevét. (<a href="#takedown">Lásd a következő kérdést</a>.) Egyéb személyes adatok eltávolítására is sor kerülhet.
+<p>Kivételes körülmények között előfordulhat, hogy a weboldalon eltávolítjuk vagy megváltoztatjuk az ön nevét vagy egyéb személyes adatok eltávolítására is sor kerülhet.
 </p>
 
 <p>Ha aggályai vannak ezzel kapcsolatosan, mielőtt igénylését elküldené, olvassa el az <a href="#real_name">álnevekről</a> szóló részt.</p>
@@ -94,18 +79,18 @@ Az Igazságügyi Minisztérium <a href="http://www.justice.gov.uk/guidance/foi-p
 
 <p>Amennyiben weboldalunkon olyan személyes adatokat lát, amelyeket el szeretne távolítani vagy rejteni, kérjük, <a href="/help/contact">tájékoztasson bennünket</a>. Pontosan határozza meg, hogy mely adatot vél problematikusnak, és adja meg, hogy az pontosan hol jelenik meg a weboldalon.</p>
 
-<p>Amennyiben valóban kényes személyes adatról van szó, amely véletlenül jelent meg a weboldalon, azt általában eltávolítjuk. általában csak akkor  foglalkozunk személyes adat eltávolításával, ha azt maga az érintett személy kéri, de kényes információ esetén bárki tájékoztatását szívesen fogadjuk.</p>
+<p>Amennyiben valóban olyan személyes adatról van szó, amely véletlenül jelent meg a weboldalon, azt természetesen eltávolítjuk. Alapvetően csak akkor távolítjuk el a személyes adatot, ha azt maga az érintett személy kéri, de másra vonatkozó adatok esetén is tájékoztatást szívesen fogadjuk.</p>
 
-<p>úgy gondoljuk, hogy a nyilvánosság szempontjából igen fontos, hogy a közintézmények tisztviselőinek neve fel legyen tüntetve. Ilyen nevet csak kivételes körülmények esetén távolítunk el, például akkor, ha az érintett személy nevének és beosztásának közzététele jelentős kockázatot jelent az adott személy biztonságára nézve. Ha ön köztisztviselő, és nevét valamilyen indokolt ok miatt el szeretné távolíttatni, juttassa el hozzánk közvetlen felettesének erre vonatkozó kérelmét. Ebben a kérelemben szerepelnie kell annak, hogy az adott kockázat nagyobb súlyú, mint a közérdek, valamint annak, hogy tettek erőfeszítést arra, hogy a nevet a szervezet saját weboldalán elrejtsék.</p>
+<p>úgy gondoljuk, hogy a nyilvánosság szempontjából igen fontos, hogy az adatgazdák tisztviselőinek neve, ha rendelkezésre áll, fel legyen tüntetve az adatgazda adatai között, illetve a válasz megjelenítésekor. Így adatgazdához kapcsolódó nevet csak kivételes körülmények esetén távolítunk el, például akkor, ha az érintett személy nevének és beosztásának közzététele jelentős kockázatot jelent az adott személy biztonságára nézve. Ha ön köztisztviselő, kormánytisztviselő vagy közalkalmazott, és nevét valamilyen indokolt ok miatt el szeretné távolíttatni, juttassa el hozzánk az ön és közvetlen felettesének erre vonatkozó kérelmét. Ebben a kérelemben szerepelnie kell annak, hogy az adott kockázat nagyobb súlyú, mint a közérdek, valamint annak, hogy tettek erőfeszítést arra, hogy a nevet a szervezet saját weboldalán is elrejtsék.</p>
 
-<p>Minden egyéb jellegű kérelem esetén a közérdek vizsgálata alapján döntjük el, hogy az adott információt eltávolítjuk-e vagy sem. Az adatvédelemről szóló 1998. évi törvény <a href="http://www.statutelaw.gov.uk/content.aspx?ActiveTextDocId=3190650">32. bekezdése</a> ezt lehetővé teszi számunkra, mivel az általunk közzétett anyag az újságírás körébe tartozik. Sok olyan csatolt dokumentum van (PDF-, Microsoft Word vagy Excel fájlok), amelynek szerkesztése nem túl egyszerű, ezért általában az érintett közintézményt megkérjük, hogy azt küldjék el újra, miután a szóban forgó adatokat eltávolították belőle.</p>
+<p>Minden egyéb jellegű kérelem esetén a közérdek szempontjából döntjük el, hogy az adott információt eltávolítjuk-e vagy sem. Ezt többek között a §§§ törvény §§§ pontja is lehetővé teszi számunkra. Ha az adatgazda a kéreSok olyan csatolt dokumentum van (PDF-, Microsoft Word vagy Excel fájlok), amelynek szerkesztése nem túl egyszerű, ezért általában az érintett közintézményt megkérjük, hogy azt küldjék el újra, miután a szóban forgó adatokat eltávolították belőle.</p>
 
 </dd>
 
 
 </dl>
 
-<p><strong>További részletek</strong> a <a href="/help/officers">megkeresésekre válaszoló munkatársakra</a> vonatkozó súgóban --&gt;
+<p>A <strong>következő részben</strong> arról olvashat, hogy mit tegyen, <a href="/help/unhappy">ha elégedetlen a kapott válasszal</a>.
 
   <div id="hash_link_padding"></div>
 </div>

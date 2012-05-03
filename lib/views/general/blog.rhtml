@@ -46,8 +46,18 @@
 <div id="left_column">
   <h1><%=@title %></h1>
  
-  <div id="blog" style="width:580px;" height="1000px">
-<iframe src="http://atlatszo.hu/category/english/" width="100%" height="2000px" frameborder="0" scrolling="no"></iframe>
+  <div id="blog">
+    <% for item in @blog_items: %>
+      <div class="blog_post">
+          <h2 id="<%= Time.parse(item['pubDate'][0]).to_i %>"><a href="<%=item['link']%>"><%=h item['title'] %></a></h2>
+          <div><%= item['encoded'] %></div>
+          <table class="sub-text">  
+            <td class="author"><%= _("Posted on {{date}} by {{author}}", :date=>simple_date(Time.parse(item['pubDate'][0])), :author=>item['creator']) %></span>
+            <td class="comments"><a href="<%=item['comments'][0]%>"><%= _("{{number_of_comments}} comments", :number_of_comments=>item['comments'][1]) %></a></span>
+          </table>
+       </div>
+       <p style="text-align: center">* * *</p>
+     <% end   %>
   </div>
 </div>
 
