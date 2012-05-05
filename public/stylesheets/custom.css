@@ -1,3 +1,34 @@
+div#twitter{
+width: auto;
+padding-right: 0px;
+}
+
+#header_right{
+padding: 0px 10px 20px 20px;
+background-color: #f8f8f8;
+border-radius: 10px 10px 10px 10px;
+width: 225px;
+}
+
+h2.foi_results {
+width: auto;
+}
+
+#header_left {
+width: 600px;
+}
+
+form input.use-datepicker[type="text"] {
+background-color: white;
+}
+
+#list-filter {
+padding: 15px 15px 5px 10px;
+background-color: lightYellow;
+border-radius: 10px 10px 10px 10px;
+margin-bottom: 20px;
+}
+
 div.request_short_listing h3 a{
 color: #5A3300;
 font-weight: bold;
@@ -251,8 +282,16 @@ color:#444;
 color:#CC860E;
 }
 
-#request_form label,label.form_label,span#to_public_body {
+#request_form label,label.form_label,span#to_public_body, span.form-selector-title {
 color:#8A6300;
+}
+
+span.form-selector-title {
+margin-top: 5px;
+font-size: 1.1em;
+}
+p.form-selector {
+text-align: center;
 }
 
 span#to_public_body {
@@ -286,7 +325,7 @@ font-family:'DeliciousRoman', Arial, sans-serif;
 #navigation_search {
 top: 7px;
 width:250px;
-left:620px;
+left:630px;
 position: absolute;
 }
 

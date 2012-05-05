@@ -1,201 +1,201 @@
-<% @title = "Igénylések benyújtása" %>
+<% @title = "IgÃ©nylÃ©sek benyÃºjtÃ¡sa" %>
 
 <%= render :partial => 'sidebar' %>
 <div id="left_column_flip">
   <h1 id="making_requests"><%= @title %></h1>
   <dl>
 
-  <dt id="which_authority">Nem vagyok biztos abban, hogy melyik közintézménynek kell küldenem az adatigénylést. Hogyan tudhatom meg? <a href="#which_authority">#</a> </dt>
+  <dt id="which_authority">Nem vagyok biztos abban, hogy melyik kÃ¶zintÃ©zmÃ©nynek kell kÃ¼ldenem az adatigÃ©nylÃ©st. Hogyan tudhatom meg? <a href="#which_authority">#</a> </dt>
 
   <dd>
-  <p>Valóban nem egyszeru a bonyolult állami struktúrán belül eligazodni és megtalálni, hogy pontosan ki rendelkezik azzal az információval, amire kíváncsi. Néhány tipp:
+  <p>ValÃ³ban nem egyszeru a bonyolult Ã¡llami struktÃºrÃ¡n belÃ¼l eligazodni Ã©s megtalÃ¡lni, hogy pontosan ki rendelkezik azzal az informÃ¡ciÃ³val, amire kÃ­vÃ¡ncsi. NÃ©hÃ¡ny tipp:
   <ul>
-  <li>Böngésszen a KiMitTud weboldalon, hátha talál sajátjához hasonló igényléseket.</li>
-  <li>Ha kitalálta, hogy milyen közintézmény rendelkezhet a kért információval, az adott oldalon a &quot;weboldal&quot; hivatkozásra kattintva megtekintheti, hogy az intézmény pontosan mivel foglalkozik.</li>
-  <li>Lépjen a közintézménnyel telefonon vagy e-mailben kapcsolatba, és kérdezze meg, hogy rendelkeznek-e ilyen jellegu információval.</li>
-  <li>Nem kell aggódnia, hogy megtalálja-e a megfelelo közintézményt. Ha nem a megfelelo intézményhez küldi igénylését, akkor a megkeresett intézménynek tájékoztatást kell nyújtania, hogy hova fordulhat.
+  <li>BÃ¶ngÃ©sszen a KiMitTud weboldalon, hÃ¡tha talÃ¡l sajÃ¡tjÃ¡hoz hasonlÃ³ igÃ©nylÃ©seket.</li>
+  <li>Ha kitalÃ¡lta, hogy milyen kÃ¶zintÃ©zmÃ©ny rendelkezhet a kÃ©rt informÃ¡ciÃ³val, az adott oldalon a &quot;weboldal&quot; hivatkozÃ¡sra kattintva megtekintheti, hogy az intÃ©zmÃ©ny pontosan mivel foglalkozik.</li>
+  <li>LÃ©pjen a kÃ¶zintÃ©zmÃ©nnyel telefonon vagy e-mailben kapcsolatba, Ã©s kÃ©rdezze meg, hogy rendelkeznek-e ilyen jellegu informÃ¡ciÃ³val.</li>
+  <li>Nem kell aggÃ³dnia, hogy megtalÃ¡lja-e a megfelelo kÃ¶zintÃ©zmÃ©nyt. Ha nem a megfelelo intÃ©zmÃ©nyhez kÃ¼ldi igÃ©nylÃ©sÃ©t, akkor a megkeresett intÃ©zmÃ©nynek tÃ¡jÃ©koztatÃ¡st kell nyÃºjtania, hogy hova fordulhat.
   </li>
-  <li>Ha kifejezetten bonyolult ügyrol van szó, segítségért <a href="/help/contact">forduljon hozzánk</a>.</li>
+  <li>Ha kifejezetten bonyolult Ã¼gyrol van szÃ³, segÃ­tsÃ©gÃ©rt <a href="/help/contact">forduljon hozzÃ¡nk</a>.</li>
   </ul>
 
   </dd>
 
 
 
-  <dt id="missing_body">Nem szerepel listájukban az a közintézmény, amelytol információt szeretnék kérni. <a href="#missing_body">#</a> </dt>
+  <dt id="missing_body">Nem szerepel listÃ¡jukban az a kÃ¶zintÃ©zmÃ©ny, amelytol informÃ¡ciÃ³t szeretnÃ©k kÃ©rni. <a href="#missing_body">#</a> </dt>
 
   <dd>
-  <p><a href="/help/contact">Lépjen velünk kapcsolatba</a> és adja meg a közintézmény nevét, valamint - ha tudja - a közérdekuadat-igénylésekre fenntartott e-mail címét.
+  <p><a href="/help/contact">LÃ©pjen velÃ¼nk kapcsolatba</a> Ã©s adja meg a kÃ¶zintÃ©zmÃ©ny nevÃ©t, valamint - ha tudja - a kÃ¶zÃ©rdekuadat-igÃ©nylÃ©sekre fenntartott e-mail cÃ­mÃ©t.
   </p>
-  <p>Ha a közintézmények új kategóriáját szeretné felvenni a weboldalra, állunk rendelkezésére.
+  <p>Ha a kÃ¶zintÃ©zmÃ©nyek Ãºj kategÃ³riÃ¡jÃ¡t szeretnÃ© felvenni a weboldalra, Ã¡llunk rendelkezÃ©sÃ©re.
   </p>
 
   </dd>
 
-  <dt id="authorities">Miért szerepelnek olyan közintézmények is, amelyek formálisan nem tartoznak az információ szabadságáról szóló törvény hatálya alá?<a href="#authorities">#</a> </dt>
+  <dt id="authorities">MiÃ©rt szerepelnek olyan kÃ¶zintÃ©zmÃ©nyek is, amelyek formÃ¡lisan nem tartoznak az informÃ¡ciÃ³ szabadsÃ¡gÃ¡rÃ³l szÃ³lÃ³ tÃ¶rvÃ©ny hatÃ¡lya alÃ¡?<a href="#authorities">#</a> </dt>
 
   <dd>
-  <p>A KiMitTud segítségével a szervezetek alábbi csoportjaitól kérhet információt:</p>
+  <p>A KiMitTud segÃ­tsÃ©gÃ©vel a szervezetek alÃ¡bbi csoportjaitÃ³l kÃ©rhet informÃ¡ciÃ³t:</p>
 
   <ul>
-    <li> azoktól, amelyek formálisan is az információ szabadságáról szóló törvény hatálya alá esnek,</li>
-    <li> azoktól, amelyekre környezetvédelmi rendelkezések vonatkoznak (ez egy kevésbé jól körbehatárolt csoport),</li>
-    <li> azoktól, amelyek önkéntes alapon vállalják, hogy eleget tesznek a az információ szabadságáról szóló törvény eloírásainak, valamint</li>
-    <li> azoktól, amelyekre nem vonatkozik az információ szabadságáról szóló törvény, de szerintünk rájuk is kellene, hogy vonatkozzon, mivel jelentos közfeladatok végrehajtásáért felelosek. 
+    <li> azoktÃ³l, amelyek formÃ¡lisan is az informÃ¡ciÃ³ szabadsÃ¡gÃ¡rÃ³l szÃ³lÃ³ tÃ¶rvÃ©ny hatÃ¡lya alÃ¡ esnek,</li>
+    <li> azoktÃ³l, amelyekre kÃ¶rnyezetvÃ©delmi rendelkezÃ©sek vonatkoznak (ez egy kevÃ©sbÃ© jÃ³l kÃ¶rbehatÃ¡rolt csoport),</li>
+    <li> azoktÃ³l, amelyek Ã¶nkÃ©ntes alapon vÃ¡llaljÃ¡k, hogy eleget tesznek a az informÃ¡ciÃ³ szabadsÃ¡gÃ¡rÃ³l szÃ³lÃ³ tÃ¶rvÃ©ny eloÃ­rÃ¡sainak, valamint</li>
+    <li> azoktÃ³l, amelyekre nem vonatkozik az informÃ¡ciÃ³ szabadsÃ¡gÃ¡rÃ³l szÃ³lÃ³ tÃ¶rvÃ©ny, de szerintÃ¼nk rÃ¡juk is kellene, hogy vonatkozzon, mivel jelentos kÃ¶zfeladatok vÃ©grehajtÃ¡sÃ¡Ã©rt felelosek. 
     </li>
   </ul>
 
-  <p>Ez utóbbi esetben weboldalunkat arra is felhasználjuk, hogy lobbizzunk az információ szabadságáról szóló törvény hatályának kiterjesztéséért. Ha egy szervezetnek a jogszabály értelmében nem kötelezo választ adnia a közérdeku adatigénylésekre, önkéntes alapon mégis megtehetik.
+  <p>Ez utÃ³bbi esetben weboldalunkat arra is felhasznÃ¡ljuk, hogy lobbizzunk az informÃ¡ciÃ³ szabadsÃ¡gÃ¡rÃ³l szÃ³lÃ³ tÃ¶rvÃ©ny hatÃ¡lyÃ¡nak kiterjesztÃ©sÃ©Ã©rt. Ha egy szervezetnek a jogszabÃ¡ly Ã©rtelmÃ©ben nem kÃ¶telezo vÃ¡laszt adnia a kÃ¶zÃ©rdeku adatigÃ©nylÃ©sekre, Ã¶nkÃ©ntes alapon mÃ©gis megtehetik.
   </p>
 
   </dd>
 
-  <dt id="focused">Miért kell az igénylés tárgyát egész pontosan körbeírnom?<a href="#focused">#</a> </dt>
+  <dt id="focused">MiÃ©rt kell az igÃ©nylÃ©s tÃ¡rgyÃ¡t egÃ©sz pontosan kÃ¶rbeÃ­rnom?<a href="#focused">#</a> </dt>
 
   <dd>
 
   <p>
-  Az igénylésben csak azt írja le, ami szükséges, hogy bárki egyszeruen megérthesse, hogy pontosan milyen információt szeretne kérni. Kérjük, <i>ne</i> szerepeljen az alábbiak egyike sem igénylésében:
+  Az igÃ©nylÃ©sben csak azt Ã­rja le, ami szÃ¼ksÃ©ges, hogy bÃ¡rki egyszeruen megÃ©rthesse, hogy pontosan milyen informÃ¡ciÃ³t szeretne kÃ©rni. KÃ©rjÃ¼k, <i>ne</i> szerepeljen az alÃ¡bbiak egyike sem igÃ©nylÃ©sÃ©ben:
   </p>
 
   <ul>
-  <li>érvelés az ügy mellett,</li>
-  <li>rágalmazó vagy sérto állítások.</li>
+  <li>Ã©rvelÃ©s az Ã¼gy mellett,</li>
+  <li>rÃ¡galmazÃ³ vagy sÃ©rto Ã¡llÃ­tÃ¡sok.</li>
   </ul>
 
   <p>
-  Ilyen esetben elofordulhat, hogy igénylését eltávolítjuk annak érdekében, hogy ne merülhessen fel a rágalmazás gyanúja, ami önnek és nekünk is egyaránt bosszúságot okozhat. A rövid és tömör üzenetek alapján a közintézmény könnyebben meg tudja határozni, hogy pontosan milyen információt kér, és így a válaszadás is kevesebb idot vesz igénybe.
+  Ilyen esetben elofordulhat, hogy igÃ©nylÃ©sÃ©t eltÃ¡volÃ­tjuk annak Ã©rdekÃ©ben, hogy ne merÃ¼lhessen fel a rÃ¡galmazÃ¡s gyanÃºja, ami Ã¶nnek Ã©s nekÃ¼nk is egyarÃ¡nt bosszÃºsÃ¡got okozhat. A rÃ¶vid Ã©s tÃ¶mÃ¶r Ã¼zenetek alapjÃ¡n a kÃ¶zintÃ©zmÃ©ny kÃ¶nnyebben meg tudja hatÃ¡rozni, hogy pontosan milyen informÃ¡ciÃ³t kÃ©r, Ã©s Ã­gy a vÃ¡laszadÃ¡s is kevesebb idot vesz igÃ©nybe.
   </p>
 
   <p>
-  Ha valamilyen érveléshez vagy kampányhoz szeretne információhoz jutni, az információ szabadsága hatékony eszköznek bizonyulhat. Bár weboldalunkat nem használhatja kampánya szervezéséhez, támogatjuk, hogy azt a szükséges információ megszerzéséhez használja. Arra is bátorítjuk, hogy máshol szervezzen kampányt; ennek az egyik leghatékonyabb és legegyszerubb módja, ha <%= link_to 'blogot indít',   "http://wordpress.com/"%>. Kampányoldalára hivatkozhat az igényléshez kapcsolódó magyarázó jegyzetben (magyarázó jegyzetet az igénylés benyújtása után készíthet).
+  Ha valamilyen Ã©rvelÃ©shez vagy kampÃ¡nyhoz szeretne informÃ¡ciÃ³hoz jutni, az informÃ¡ciÃ³ szabadsÃ¡ga hatÃ©kony eszkÃ¶znek bizonyulhat. BÃ¡r weboldalunkat nem hasznÃ¡lhatja kampÃ¡nya szervezÃ©sÃ©hez, tÃ¡mogatjuk, hogy azt a szÃ¼ksÃ©ges informÃ¡ciÃ³ megszerzÃ©sÃ©hez hasznÃ¡lja. Arra is bÃ¡torÃ­tjuk, hogy mÃ¡shol szervezzen kampÃ¡nyt; ennek az egyik leghatÃ©konyabb Ã©s legegyszerubb mÃ³dja, ha <%= link_to 'blogot indÃ­t',   "http://wordpress.com/"%>. KampÃ¡nyoldalÃ¡ra hivatkozhat az igÃ©nylÃ©shez kapcsolÃ³dÃ³ magyarÃ¡zÃ³ jegyzetben (magyarÃ¡zÃ³ jegyzetet az igÃ©nylÃ©s benyÃºjtÃ¡sa utÃ¡n kÃ©szÃ­thet).
   </p>
 
   </dd>
 
-  <dt id="fees">Pénzbe kerül az adatigénylés?<a href="#fees">#</a> </dt>
+  <dt id="fees">PÃ©nzbe kerÃ¼l az adatigÃ©nylÃ©s?<a href="#fees">#</a> </dt>
 
   <dd>
 
-  <p>A közérdeku adat igénylése szinte minden esetben ingyenes.</p>
+  <p>A kÃ¶zÃ©rdeku adat igÃ©nylÃ©se szinte minden esetben ingyenes.</p>
 
-  <p>A közintézmények gyakran felesleges és elrettento szövegben arra figyelmeztetik a felhasználókat, hogy díj felszámolására &quot;kerülhet sor&quot;. Az ilyen megjegyzéseket hagyja figyelmen kívül. A valóságban szinte soha nem számítanak fel díjat.  Csak olyan esetben számíthatnak fel díjat, ha errol elozetesen az ön beleegyezését is kikérték.  <a       href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/practical_application/chargingafee.pdf">További részletek</a> az adatvédelmi biztostól.
+  <p>A kÃ¶zintÃ©zmÃ©nyek gyakran felesleges Ã©s elrettento szÃ¶vegben arra figyelmeztetik a felhasznÃ¡lÃ³kat, hogy dÃ­j felszÃ¡molÃ¡sÃ¡ra &quot;kerÃ¼lhet sor&quot;. Az ilyen megjegyzÃ©seket hagyja figyelmen kÃ­vÃ¼l. A valÃ³sÃ¡gban szinte soha nem szÃ¡mÃ­tanak fel dÃ­jat.  Csak olyan esetben szÃ¡mÃ­thatnak fel dÃ­jat, ha errol elozetesen az Ã¶n beleegyezÃ©sÃ©t is kikÃ©rtÃ©k.  <a       href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/practical_application/chargingafee.pdf">TovÃ¡bbi rÃ©szletek</a> az adatvÃ©delmi biztostÃ³l.
   </p>
 
-  <p>Bizonyos esetekben elofordulhat, hogy a közintézmény igénylését elutasítja arra hivatkozva, hogy az adminisztráció költsége meghaladja a 600 fontot (állami szintu ügyeknél), illetve a 450 fontot (minden más közintézmény esetében). Ilyenkor pontosíthatja kérdését: például jóval olcsóbb a közintézmény számára arra választ adni, hogy az elmúlt évben mennyi pénzt költöttek csokoládéra, mintha ugyanezt az adatot az elmúlt tíz évre vonatkozóan kérné.
+  <p>Bizonyos esetekben elofordulhat, hogy a kÃ¶zintÃ©zmÃ©ny igÃ©nylÃ©sÃ©t elutasÃ­tja arra hivatkozva, hogy az adminisztrÃ¡ciÃ³ kÃ¶ltsÃ©ge meghaladja a 600 fontot (Ã¡llami szintu Ã¼gyeknÃ©l), illetve a 450 fontot (minden mÃ¡s kÃ¶zintÃ©zmÃ©ny esetÃ©ben). Ilyenkor pontosÃ­thatja kÃ©rdÃ©sÃ©t: pÃ©ldÃ¡ul jÃ³val olcsÃ³bb a kÃ¶zintÃ©zmÃ©ny szÃ¡mÃ¡ra arra vÃ¡laszt adni, hogy az elmÃºlt Ã©vben mennyi pÃ©nzt kÃ¶ltÃ¶ttek csokolÃ¡dÃ©ra, mintha ugyanezt az adatot az elmÃºlt tÃ­z Ã©vre vonatkozÃ³an kÃ©rnÃ©.
   </p>
 
   </dd>
 
 
 
-  <dt id="quickly_response">Milyen gyorsan kapok választ? <a href="#quickly_response">#</a> </dt>
+  <dt id="quickly_response">Milyen gyorsan kapok vÃ¡laszt? <a href="#quickly_response">#</a> </dt>
 
   <dd>
-  <p>A törvény rendelkezéseinek értelmében az egyes közintézményeknek <strong>azonnal</strong> választ kell adniuk az adatigénylésekre.
+  <p>A tÃ¶rvÃ©ny rendelkezÃ©seinek Ã©rtelmÃ©ben az egyes kÃ¶zintÃ©zmÃ©nyeknek <strong>azonnal</strong> vÃ¡laszt kell adniuk az adatigÃ©nylÃ©sekre.
   </p>
 
-  <p>Ha a válaszadásra azonnal nem is kerül sor, a legtöbb esetben 20 munkanapon belül választ kell adniuk. Ha pontosítania kellett igénylését, vagy iskolától kért információt vagy két egyéb esetrol van szó, akkor a válaszadásra több ido állhat rendelkezésre (<a href="/help/officers#days">pontos részletek</a>).
+  <p>Ha a vÃ¡laszadÃ¡sra azonnal nem is kerÃ¼l sor, a legtÃ¶bb esetben 20 munkanapon belÃ¼l vÃ¡laszt kell adniuk. Ha pontosÃ­tania kellett igÃ©nylÃ©sÃ©t, vagy iskolÃ¡tÃ³l kÃ©rt informÃ¡ciÃ³t vagy kÃ©t egyÃ©b esetrol van szÃ³, akkor a vÃ¡laszadÃ¡sra tÃ¶bb ido Ã¡llhat rendelkezÃ©sre (<a href="/help/officers#days">pontos rÃ©szletek</a>).
 
-  <p>A KiMitTud e-mailben értesítést küld, ha idoben nem érkezik válasz.  A közintézményt ekkor üzenetben figyelmeztetheti a késedelemre, illetve tájékoztathatja oket a törvényszegésrol.</p>
+  <p>A KiMitTud e-mailben Ã©rtesÃ­tÃ©st kÃ¼ld, ha idoben nem Ã©rkezik vÃ¡lasz.  A kÃ¶zintÃ©zmÃ©nyt ekkor Ã¼zenetben figyelmeztetheti a kÃ©sedelemre, illetve tÃ¡jÃ©koztathatja oket a tÃ¶rvÃ©nyszegÃ©srol.</p>
 
   </dd>
 
-  <dt id="deadline_extended">Meghosszabbított határido<a href="#deadline_extended">#</a> </dt>
+  <dt id="deadline_extended">MeghosszabbÃ­tott hatÃ¡rido<a href="#deadline_extended">#</a> </dt>
 
   <dd>
-  <p>A jogszabályok értelmében a közintézménynek <strong>több idore van szüksége</strong> az igényléshez... (TO DO)
+  <p>A jogszabÃ¡lyok Ã©rtelmÃ©ben a kÃ¶zintÃ©zmÃ©nynek <strong>tÃ¶bb idore van szÃ¼ksÃ©ge</strong> az igÃ©nylÃ©shez... (TO DO)
   </p>
 
 
   </dd>
-  <dt id="no_response">Mi történik akkor, ha sohasem kapok választ?<a href="#no_response">#</a> </dt>
+  <dt id="no_response">Mi tÃ¶rtÃ©nik akkor, ha sohasem kapok vÃ¡laszt?<a href="#no_response">#</a> </dt>
 
   <dd>
-  <p>Több dolgot is tehet, ha nem kap választ.</p>
+  <p>TÃ¶bb dolgot is tehet, ha nem kap vÃ¡laszt.</p>
   <ul>
-      <li>Elofordulhat, hogy az adott közintézmény egyszeruen nem kapta meg az adatigénylést. érdemes telefonon felhívni a közintézményt és udvariasan megkérdezni, hogy megkapták-e az igénylést, amelyet e-mailben küldtünk el.
+      <li>Elofordulhat, hogy az adott kÃ¶zintÃ©zmÃ©ny egyszeruen nem kapta meg az adatigÃ©nylÃ©st. Ã©rdemes telefonon felhÃ­vni a kÃ¶zintÃ©zmÃ©nyt Ã©s udvariasan megkÃ©rdezni, hogy megkaptÃ¡k-e az igÃ©nylÃ©st, amelyet e-mailben kÃ¼ldtÃ¼nk el.
       </li>
-      <li>Ha nem kapták meg, a problémát valószínuleg a &quot;levélszemétszurok&quot; okozták. Hivatkozzon a súgóban a megkeresésekre válaszoló munkatársakra vonatkozó '<a href="/help/officers#spam_problems">Látok a KiMitTud rendszerében egy olyan igénylést, amelyet soha nem kaptunk meg e-mailben.</a>' címu részben leírtakra. 
+      <li>Ha nem kaptÃ¡k meg, a problÃ©mÃ¡t valÃ³szÃ­nuleg a &quot;levÃ©lszemÃ©tszurok&quot; okoztÃ¡k. Hivatkozzon a sÃºgÃ³ban a megkeresÃ©sekre vÃ¡laszolÃ³ munkatÃ¡rsakra vonatkozÃ³ '<a href="/help/officers#spam_problems">LÃ¡tok a KiMitTud rendszerÃ©ben egy olyan igÃ©nylÃ©st, amelyet soha nem kaptunk meg e-mailben.</a>' cÃ­mu rÃ©szben leÃ­rtakra. 
       </li>
-      <li>Ha így sem jár sikerrel, kérjen belso felülvizsgálatot, majd forduljon panaszával az adatvédelmi biztoshoz. Olvassa el a '<a href="/help/unhappy">	Nem elégedett a válasszal?</a>' címu oldalt.
+      <li>Ha Ã­gy sem jÃ¡r sikerrel, kÃ©rjen belso felÃ¼lvizsgÃ¡latot, majd forduljon panaszÃ¡val az adatvÃ©delmi biztoshoz. Olvassa el a '<a href="/help/unhappy">	Nem elÃ©gedett a vÃ¡lasszal?</a>' cÃ­mu oldalt.
   </ul>
   </dd>
 
-  <dt id="not_satifised">Mi történik, ha nem vagyok elégedett a válasszal? <a href="#not_satifised">#</a> </dt>
-  <dd>Ha nem kapja meg a kért információt, vagy azt nem idoben kapta meg, olvassa el a '<a href="/help/unhappy">Nem elégedett a válasszal?</a>' címu oldalt.
+  <dt id="not_satifised">Mi tÃ¶rtÃ©nik, ha nem vagyok elÃ©gedett a vÃ¡lasszal? <a href="#not_satifised">#</a> </dt>
+  <dd>Ha nem kapja meg a kÃ©rt informÃ¡ciÃ³t, vagy azt nem idoben kapta meg, olvassa el a '<a href="/help/unhappy">Nem elÃ©gedett a vÃ¡lasszal?</a>' cÃ­mu oldalt.
   </dd>
 
-  <dt id="reuse">Azt írják, hogy nem használhatom fel a kapott információt.<a href="#reuse">#</a> </dt>
+  <dt id="reuse">Azt Ã­rjÃ¡k, hogy nem hasznÃ¡lhatom fel a kapott informÃ¡ciÃ³t.<a href="#reuse">#</a> </dt>
   <dd>
-  <p>A közintézmények gyakran egy olyan jogi szöveget is feltüntetnek, miszerint a &quot;<a href="http://www.opsi.gov.uk/si/si2005/20051515">Közszférával kapcsolatos információk újbóli felhasználására vonatkozó eloírások, 2005</a>&quot; értelmében a kapott információkkal semmit sem tehet.
+  <p>A kÃ¶zintÃ©zmÃ©nyek gyakran egy olyan jogi szÃ¶veget is feltÃ¼ntetnek, miszerint a &quot;<a href="http://www.opsi.gov.uk/si/si2005/20051515">KÃ¶zszfÃ©rÃ¡val kapcsolatos informÃ¡ciÃ³k ÃºjbÃ³li felhasznÃ¡lÃ¡sÃ¡ra vonatkozÃ³ eloÃ­rÃ¡sok, 2005</a>&quot; Ã©rtelmÃ©ben a kapott informÃ¡ciÃ³kkal semmit sem tehet.
   </p>
 
-  <p>Az információt természetesen felhasználhatja cikkek írásához, azt összefoglalhatja, illetve egyes részeit idézheti is. Véleményünk szerint a kapott információt teljes egészében is publikálhatja (ahogyan mi is tesszük), bár elméletben erre nincsen lehetoség.  Lásd a <a href="/help/officers#copyright">szerzoi jogára vonatkozó politikánkat</a>.</p>
+  <p>Az informÃ¡ciÃ³t termÃ©szetesen felhasznÃ¡lhatja cikkek Ã­rÃ¡sÃ¡hoz, azt Ã¶sszefoglalhatja, illetve egyes rÃ©szeit idÃ©zheti is. VÃ©lemÃ©nyÃ¼nk szerint a kapott informÃ¡ciÃ³t teljes egÃ©szÃ©ben is publikÃ¡lhatja (ahogyan mi is tesszÃ¼k), bÃ¡r elmÃ©letben erre nincsen lehetosÃ©g.  LÃ¡sd a <a href="/help/officers#copyright">szerzoi jogÃ¡ra vonatkozÃ³ politikÃ¡nkat</a>.</p>
 
   </dd>
 
-  <dt id="ico_help">Ismertetnék az adatigénylési eljárás lényegét? <a href="#ico_help">#</a> </dt>
-
-  <dd>
-  <p>Nézze meg az adatvédelmi biztos weboldalán a <a href="http://www.ico.gov.uk/for_the_public/access_to_official_information.aspx">hivatalos információkhoz valló hozzáférésrol</a> szóló oldalakat.</p>
-
-  <p>Amennyiben skót közintézménytol kér információt, az eljárás igen hasonló. A különbséget az idokorlátok jelentik. Részletekért lásd a <a href="http://www.itspublicknowledge.info/nmsruntime/saveasdialog.asp?lID=1858&amp;sID=321">skót adatvédelmi biztos útmutatóját</a>.</p> 
-  </dd>
-
-  <dt id="data_protection">Saját magamról is kérhetek információt? <a href="#data_protection">#</a> </dt>
+  <dt id="ico_help">IsmertetnÃ©k az adatigÃ©nylÃ©si eljÃ¡rÃ¡s lÃ©nyegÃ©t? <a href="#ico_help">#</a> </dt>
 
   <dd>
-  <p>Nem. A KiMitTud rendszerén keresztül kért információk nyilvánosak, és a rendszer magánszeméllyel kapcsolatos információk felkutatására nem használható.</p>
+  <p>NÃ©zze meg az adatvÃ©delmi biztos weboldalÃ¡n a <a href="http://www.ico.gov.uk/for_the_public/access_to_official_information.aspx">hivatalos informÃ¡ciÃ³khoz vallÃ³ hozzÃ¡fÃ©rÃ©srol</a> szÃ³lÃ³ oldalakat.</p>
 
-  <p>Ha szeretné megtudni, hogy egy adott közintézmény milyen információkkal rendelkezik önrol, az adatvédelemrol szóló törvénynek megfeleloen  nem nyilvános &quot;személyes hozzáférésre irányuló kérelmet&quot; kell benyújtania.  Az adatvédelmi biztos honlapján található &quot;<a   href="http://www.ico.gov.uk/upload/documents/library/data_protection/introductory/subject_access_rights.pdf">Hogyan férhetek hozzá saját adataimhoz</a>&quot; címu dokumentum ismerteti az eljárást.</p>
-
-  <p>Ha azt észleli, hogy valaki személyes adatokat is feltüntetett (esetleg véletlenül), azonnal <a href="/help/contact">lépjen velünk kapcsolatba</a>, hogy a szóban forgó adatokat eltávolíthassuk.</p>
+  <p>Amennyiben skÃ³t kÃ¶zintÃ©zmÃ©nytol kÃ©r informÃ¡ciÃ³t, az eljÃ¡rÃ¡s igen hasonlÃ³. A kÃ¼lÃ¶nbsÃ©get az idokorlÃ¡tok jelentik. RÃ©szletekÃ©rt lÃ¡sd a <a href="http://www.itspublicknowledge.info/nmsruntime/saveasdialog.asp?lID=1858&amp;sID=321">skÃ³t adatvÃ©delmi biztos ÃºtmutatÃ³jÃ¡t</a>.</p> 
   </dd>
 
-
-  <dt id="private_requests">Adatigénylésemet titokban szeretném tartani. (Legalábbis az írásom megjelenéséig) <a href="#private_requests">#</a> </dt>
-
-  <dd><p>A KiMitTud jelenleg kizárólag nyilvános igénylésekkel foglalkozik. Az összes beérkezo választ automatikusan megjelenítjük weboldalunkon, ahol azokat bárki elolvashatja.  </p>
-  <p>Ha nem nyilvánosan kér információt, közvetlenül az érintett közintézménnyel kell felvennie a kapcsolatot.  Ha olyan rendszert szeretne vásárolni, amelynek segítségével a közérdeku adatigényléseket titokban lehet kezelni, <a href="/help/contact">lépjen velünk kapcsolatba</a>.
-  </p>
-  </dd>
-
-  <dt id="eir">Miért van az, hogy egyes közintézményektol csak környezettel kapcsolatos információkat kérhetek? <a href="#eir">#</a> </dt>
+  <dt id="data_protection">SajÃ¡t magamrÃ³l is kÃ©rhetek informÃ¡ciÃ³t? <a href="#data_protection">#</a> </dt>
 
   <dd>
-  <p>Egyes közintézmények, mint például a <a href="http://www.whatdotheyknow.com/body/south_east_water">Szegedi Vízmu Zrt.</a>, nem tartoznak az információ szabadságáról szóló törvény hatálya alá, egy másik jogszabályt, a környezeti információról szóló rendeletet azonban figyelembe kell venni. 
-  </p>
+  <p>Nem. A KiMitTud rendszerÃ©n keresztÃ¼l kÃ©rt informÃ¡ciÃ³k nyilvÃ¡nosak, Ã©s a rendszer magÃ¡nszemÃ©llyel kapcsolatos informÃ¡ciÃ³k felkutatÃ¡sÃ¡ra nem hasznÃ¡lhatÃ³.</p>
 
-  <p>Ez egy igen hasonló jogszabály, tehát a KiMitTud segítségével a közérdeku adatigényléshez hasonlóan kérhet információkat. Az egyetlen eltérés az, hogy az igénylés benyújtásához használt oldalon van egy figyelmeztetés, miszerint csak &quot;környezeti információt&quot; kérhet, illetve magyarázatot is talál, hogy ez pontosan mit jelent. Ez egy elég tág fogalom.
-  </p>
+  <p>Ha szeretnÃ© megtudni, hogy egy adott kÃ¶zintÃ©zmÃ©ny milyen informÃ¡ciÃ³kkal rendelkezik Ã¶nrol, az adatvÃ©delemrol szÃ³lÃ³ tÃ¶rvÃ©nynek megfeleloen  nem nyilvÃ¡nos &quot;szemÃ©lyes hozzÃ¡fÃ©rÃ©sre irÃ¡nyulÃ³ kÃ©relmet&quot; kell benyÃºjtania.  Az adatvÃ©delmi biztos honlapjÃ¡n talÃ¡lhatÃ³ &quot;<a   href="http://www.ico.gov.uk/upload/documents/library/data_protection/introductory/subject_access_rights.pdf">Hogyan fÃ©rhetek hozzÃ¡ sajÃ¡t adataimhoz</a>&quot; cÃ­mu dokumentum ismerteti az eljÃ¡rÃ¡st.</p>
 
-  <p>Környezeti információt természetesen más közintézménytol is kérhet. Ugyanúgy kell eljárnia, mintha közérdeku adatot igényelne. A közintézmény fogja eldönteni, hogy inkább a környezeti információról szóló rendeletet veszi figyelembe válaszadáskor. 
+  <p>Ha azt Ã©szleli, hogy valaki szemÃ©lyes adatokat is feltÃ¼ntetett (esetleg vÃ©letlenÃ¼l), azonnal <a href="/help/contact">lÃ©pjen velÃ¼nk kapcsolatba</a>, hogy a szÃ³ban forgÃ³ adatokat eltÃ¡volÃ­thassuk.</p>
+  </dd>
+
+
+  <dt id="private_requests">AdatigÃ©nylÃ©semet titokban szeretnÃ©m tartani. (LegalÃ¡bbis az Ã­rÃ¡som megjelenÃ©sÃ©ig) <a href="#private_requests">#</a> </dt>
+
+  <dd><p>A KiMitTud jelenleg kizÃ¡rÃ³lag nyilvÃ¡nos igÃ©nylÃ©sekkel foglalkozik. Az Ã¶sszes beÃ©rkezo vÃ¡laszt automatikusan megjelenÃ­tjÃ¼k weboldalunkon, ahol azokat bÃ¡rki elolvashatja.  </p>
+  <p>Ha nem nyilvÃ¡nosan kÃ©r informÃ¡ciÃ³t, kÃ¶zvetlenÃ¼l az Ã©rintett kÃ¶zintÃ©zmÃ©nnyel kell felvennie a kapcsolatot.  Ha olyan rendszert szeretne vÃ¡sÃ¡rolni, amelynek segÃ­tsÃ©gÃ©vel a kÃ¶zÃ©rdeku adatigÃ©nylÃ©seket titokban lehet kezelni, <a href="/help/contact">lÃ©pjen velÃ¼nk kapcsolatba</a>.
   </p>
   </dd>
 
-  <dt id="multiple">Ugyanazt az adatigénylést elküldhetem egyszerre több közintézménynek is (pl. az összes polgármesteri hivatalnak)? <a href="#multiple">#</a> </dt>
+  <dt id="eir">MiÃ©rt van az, hogy egyes kÃ¶zintÃ©zmÃ©nyektol csak kÃ¶rnyezettel kapcsolatos informÃ¡ciÃ³kat kÃ©rhetek? <a href="#eir">#</a> </dt>
 
-  <dd>Azt kérjük, hogy eloször csak néhány közintézménynek küldje el a tesztverziót. A válaszok elosegíthetik az igénylés megfogalmazásának pontosítását, hogy a legjobb választ kaphassa, amikor az igénylést az összes közintézmény részére elküldi. Jelenleg nincsen semmilyen automatikus megoldás arra, hogy az igénylést több közintézménynek is elküldje, tehát a másolást és beillesztést kézzel kell elvégeznie.
+  <dd>
+  <p>Egyes kÃ¶zintÃ©zmÃ©nyek, mint pÃ©ldÃ¡ul a <a href="http://www.whatdotheyknow.com/body/south_east_water">Szegedi VÃ­zmu Zrt.</a>, nem tartoznak az informÃ¡ciÃ³ szabadsÃ¡gÃ¡rÃ³l szÃ³lÃ³ tÃ¶rvÃ©ny hatÃ¡lya alÃ¡, egy mÃ¡sik jogszabÃ¡lyt, a kÃ¶rnyezeti informÃ¡ciÃ³rÃ³l szÃ³lÃ³ rendeletet azonban figyelembe kell venni. 
+  </p>
+
+  <p>Ez egy igen hasonlÃ³ jogszabÃ¡ly, tehÃ¡t a KiMitTud segÃ­tsÃ©gÃ©vel a kÃ¶zÃ©rdeku adatigÃ©nylÃ©shez hasonlÃ³an kÃ©rhet informÃ¡ciÃ³kat. Az egyetlen eltÃ©rÃ©s az, hogy az igÃ©nylÃ©s benyÃºjtÃ¡sÃ¡hoz hasznÃ¡lt oldalon van egy figyelmeztetÃ©s, miszerint csak &quot;kÃ¶rnyezeti informÃ¡ciÃ³t&quot; kÃ©rhet, illetve magyarÃ¡zatot is talÃ¡l, hogy ez pontosan mit jelent. Ez egy elÃ©g tÃ¡g fogalom.
+  </p>
+
+  <p>KÃ¶rnyezeti informÃ¡ciÃ³t termÃ©szetesen mÃ¡s kÃ¶zintÃ©zmÃ©nytol is kÃ©rhet. UgyanÃºgy kell eljÃ¡rnia, mintha kÃ¶zÃ©rdeku adatot igÃ©nyelne. A kÃ¶zintÃ©zmÃ©ny fogja eldÃ¶nteni, hogy inkÃ¡bb a kÃ¶rnyezeti informÃ¡ciÃ³rÃ³l szÃ³lÃ³ rendeletet veszi figyelembe vÃ¡laszadÃ¡skor. 
+  </p>
+  </dd>
+
+  <dt id="multiple">Ugyanazt az adatigÃ©nylÃ©st elkÃ¼ldhetem egyszerre tÃ¶bb kÃ¶zintÃ©zmÃ©nynek is (pl. az Ã¶sszes polgÃ¡rmesteri hivatalnak)? <a href="#multiple">#</a> </dt>
+
+  <dd>Azt kÃ©rjÃ¼k, hogy eloszÃ¶r csak nÃ©hÃ¡ny kÃ¶zintÃ©zmÃ©nynek kÃ¼ldje el a tesztverziÃ³t. A vÃ¡laszok elosegÃ­thetik az igÃ©nylÃ©s megfogalmazÃ¡sÃ¡nak pontosÃ­tÃ¡sÃ¡t, hogy a legjobb vÃ¡laszt kaphassa, amikor az igÃ©nylÃ©st az Ã¶sszes kÃ¶zintÃ©zmÃ©ny rÃ©szÃ©re elkÃ¼ldi. Jelenleg nincsen semmilyen automatikus megoldÃ¡s arra, hogy az igÃ©nylÃ©st tÃ¶bb kÃ¶zintÃ©zmÃ©nynek is elkÃ¼ldje, tehÃ¡t a mÃ¡solÃ¡st Ã©s beillesztÃ©st kÃ©zzel kell elvÃ©geznie.
 
   </dd>
 
-  <dt id="offsite">Az igénylést nem a weboldalon keresztül nyújtottam be. Hogyan tölthetem fel mégis az archívumba?<a href="#offsite">#</a> </dt>
+  <dt id="offsite">Az igÃ©nylÃ©st nem a weboldalon keresztÃ¼l nyÃºjtottam be. Hogyan tÃ¶lthetem fel mÃ©gis az archÃ­vumba?<a href="#offsite">#</a> </dt>
 
-  <dd>A KiMitTud csak a weboldalon keresztül benyújtott igényléseket tárolja, és nem kíván az összes közérdeku adatigénylés archívumává válni. Egyéb igénylések feltöltését soha nem fogjuk támogatni. Nem áll módunkban ellenorizni, hogy az igénylésre érkezo válasz valóban az érintett közintézménytol származik-e. Ha tényleg fontosnak tartja a választ, igénylését küldje el újra a KiMitTud weboldalán keresztül.
+  <dd>A KiMitTud csak a weboldalon keresztÃ¼l benyÃºjtott igÃ©nylÃ©seket tÃ¡rolja, Ã©s nem kÃ­vÃ¡n az Ã¶sszes kÃ¶zÃ©rdeku adatigÃ©nylÃ©s archÃ­vumÃ¡vÃ¡ vÃ¡lni. EgyÃ©b igÃ©nylÃ©sek feltÃ¶ltÃ©sÃ©t soha nem fogjuk tÃ¡mogatni. Nem Ã¡ll mÃ³dunkban ellenorizni, hogy az igÃ©nylÃ©sre Ã©rkezo vÃ¡lasz valÃ³ban az Ã©rintett kÃ¶zintÃ©zmÃ©nytol szÃ¡rmazik-e. Ha tÃ©nyleg fontosnak tartja a vÃ¡laszt, igÃ©nylÃ©sÃ©t kÃ¼ldje el Ãºjra a KiMitTud weboldalÃ¡n keresztÃ¼l.
   </dd>
 
-  <dt id="moderation">Hogyan moderálják az igénylésekhez kapcsolódó magyarázó jegyzeteket? <a href="#moderation">#</a> </dt>
+  <dt id="moderation">Hogyan moderÃ¡ljÃ¡k az igÃ©nylÃ©sekhez kapcsolÃ³dÃ³ magyarÃ¡zÃ³ jegyzeteket? <a href="#moderation">#</a> </dt>
 
   <dd> 
-  <p>A KiMitTud oldalain megjeleno magyarázó jegyzetek segítséget nyújtanak ahhoz, hogy mások is hozzáférhessenek a kért információkhoz, illetve felhívhatják a figyelmet arra, hogy hol kérhetnek segítséget. Fenntartjuk a jogot minden más jellegu megjegyzés eltávolítására.
+  <p>A KiMitTud oldalain megjeleno magyarÃ¡zÃ³ jegyzetek segÃ­tsÃ©get nyÃºjtanak ahhoz, hogy mÃ¡sok is hozzÃ¡fÃ©rhessenek a kÃ©rt informÃ¡ciÃ³khoz, illetve felhÃ­vhatjÃ¡k a figyelmet arra, hogy hol kÃ©rhetnek segÃ­tsÃ©get. Fenntartjuk a jogot minden mÃ¡s jellegu megjegyzÃ©s eltÃ¡volÃ­tÃ¡sÃ¡ra.
   </p>
-  <p>Természetesen politikai vita nem megengedett. Szúrjon be hivatkozást, amely a megfelelo fórumra vagy kampányoldalra mutat.</p>
+  <p>TermÃ©szetesen politikai vita nem megengedett. SzÃºrjon be hivatkozÃ¡st, amely a megfelelo fÃ³rumra vagy kampÃ¡nyoldalra mutat.</p>
   <dd>
 
   </dl>
 
-  <p>A <strong>következo</strong> részben a <a href="/help/privacy">saját adatainak védelmérol</a> olvashat--&gt;
+  <p>A <strong>kÃ¶vetkezo</strong> rÃ©szben a <a href="/help/privacy">sajÃ¡t adatainak vÃ©delmÃ©rol</a> olvashat--&gt;
 
   <div id="hash_link_padding"></div>
 </div>
