@@ -1,13 +1,36 @@
+div#subject_note{
+margin-top: 10px;
+}
+
 div#twitter{
 width: auto;
 padding-right: 0px;
 }
 
-#header_right{
+#header_right, #request_advice, div.form_item_note{
 padding: 0px 10px 20px 20px;
-background-color: #f8f8f8;
+background-color: #f0f0f0;
 border-radius: 10px 10px 10px 10px;
 width: 225px;
+margin-bottom: 10px;
+}
+
+#right_column_flip{
+padding-left: 10px;
+padding-right: 10px;
+background-color: #f0f0f0;
+border-radius: 10px 10px 10px 10px;
+}
+
+div.form_item_note{
+float: right;
+padding-top: 20px;
+margin-left: 0px;
+}
+
+#request_advice ul{
+padding-left: 10px;
+padding-top: 25px;
 }
 
 h2.foi_results {
@@ -282,7 +305,7 @@ color:#444;
 color:#CC860E;
 }
 
-#request_form label,label.form_label,span#to_public_body, span.form-selector-title {
+#request_form label,label.form_label,  span.form-selector-title {
 color:#8A6300;
 }
 
@@ -380,13 +403,21 @@ font-family:'DeliciousRoman', Arial, sans-serif;
 color:#8A6300;
 }
 
+div.correspondence{
+width:580px;
+background-image: none;
+}
 
-div.correspondence,div.comment_in_request {
-background:url(/images/stripes-70.png);
+div.comment_in_request{
+width:540px;
+}
+
+div.correspondence, div.comment_in_request {
+background-image: none;
 }
 
 div.outgoing.correspondence {
-background:url(/images/stripes-70-light.png);
+background-image: none;
 }
 
 #frontpage_splash {
@@ -549,12 +580,10 @@ width: 580px;
 
 #frontpage_splash #right_column {
 padding-left: 20px;
-border-left: 1px solid #bbbbbb;}
+border-left: 1px solid #bbbbbb;
+}
 
-#frontpage_splash {
-border-bottom: 1px solid #bbbbbb;}
-
-#right_column_flip h3, #typeahead_response h3 {
+#right_column_flip h3, #typeahead_response h3, h2.foi_results, h2.person_results, h2.publicbody_results, #frontpage_examples h3, div#after_actions h2{
 background-color: #CD1713;
 color: white;
 padding: 5px 10px 5px 10px;
@@ -583,7 +612,7 @@ font-size:14px;
 }
 
 .request_listing, .user_listing, .body_listing  {
-padding-top: 0px;}
+padding-top: 6px;}
 
 #footer{
 margin-top:0px;
@@ -597,3 +626,22 @@ color:#333;
 text-decoration: underline;
 }
 
+div#request_header{
+background-color: white;
+padding-top:0px;
+margin-top: 10px;
+}
+
+input#typeahead_search {
+width:490px;
+}
+
+input#query{
+width: 400px;
+}
+
+#request_header_text{
+width:490px;
+background-color: lightyellow;
+border-style: none;
+}
