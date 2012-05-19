@@ -2,6 +2,16 @@ div#subject_note{
 margin-top: 10px;
 }
 
+div.form_item_note ul{
+margin: 0 auto;
+padding-left: 10px;
+padding-top: 0px;
+}
+
+div.form_item_note ul li{
+margin-bottom: 1em;
+}
+
 div#twitter{
 width: auto;
 padding-right: 0px;
@@ -326,11 +336,12 @@ color:#555;
 }
 
 #stepwise_make_request {
-background-color:#d0d0d0;
-background:url(/images/stripes.png);
-border:1px solid #DEBEDD;
+background-color:none;
+background:none;
+border:1px solid #CD1713;
 font-family:'DeliciousRoman', Arial, sans-serif;
 color:#8A6300;
+width: 95%;
 }
 
 div.comment_in_request {
@@ -583,13 +594,45 @@ padding-left: 20px;
 border-left: 1px solid #bbbbbb;
 }
 
-#right_column_flip h3, #typeahead_response h3, h2.foi_results, h2.person_results, h2.publicbody_results, #frontpage_examples h3, div#after_actions h2{
+div.results_section h2, #right_column_flip h3, div#foi_results_section h2, h2#email_subscriptions, #typeahead_response h3, div#user_profile_search h2, h2.person_results, h2.publicbody_results, #frontpage_examples h3, div#after_actions h2{
 background-color: #CD1713;
 color: white;
 padding: 5px 10px 5px 10px;
 font-family: 'droid sans', Arial, Helvetica, sans-serif;
 font-size: 18px;
 font-weight: bold;
+}
+
+.request_short_listing{
+margin: 5px 10px 5px 10px;
+padding-bottom: 5px;
+border-bottom: solid 1px #555 }
+
+div#request_search_ahead_results div.request_short_listing h3{
+background-color: transparent;
+}
+
+div#request_search_ahead_results div.request_short_listing p{
+text-align:left;
+}
+
+div#request_search_ahead_results p{
+text-align: center;
+}
+
+div#typeahead_response.new-request{
+float:left;
+width:612px;
+background-color: lightyellow;
+border-radius: 10px;
+}
+
+div#typeahead_response.new-request h3{
+margin-top: 0px;
+}
+
+div#typeahead_response.new-request div#request_search_ahead_results{
+margin-left:0;
 }
 
 #authority_selection {

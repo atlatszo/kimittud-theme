@@ -196,7 +196,7 @@
         <h2 id="email_subscriptions"> <%= _('Your email subscriptions')%></h2>
         <p><%= _('None made.')%></p>
     <% else %>
-        <h2 id="email_subscriptions"> Your <%=pluralize(@track_things.size, _('email subscription')) %> </h2>
+        <h2 id="email_subscriptions">Ön eddig az alábbi <%=@track_things.size.to_s + _('email subscription') %> </h2>
         <% if @track_things_grouped.size == 1 %>
             <% form_tag({:controller => 'track', :action => 'delete_all_type'}, :class => "feed_form") do %>
                 <h3>
