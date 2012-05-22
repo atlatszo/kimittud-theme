@@ -1,6 +1,5 @@
-<%= _('You have a new response to the {{law_used_full}} request ',:law_used_full=>@info_request.law_used_full)%>
-'<%= @info_request.title %>' <%=_('that you made to')%> 
-<%= @info_request.public_body.name %>. 
+Válasz érkezett a(z) '<%= @info_request.title %>' tárgyú közérdekúadat-igénylésre, 
+amelyet ön nyújtott be a(z) <%= @info_request.public_body.name %> részére.
 
 <%= _('To view the response, click on the link below.')%>
 
@@ -13,5 +12,8 @@ contains any useful information.' )%>
 you, the original requester, to evaluate them.')%>
 
 -- <%= _('the {{site_name}} team', :site_name=>site_name) %>
+
+Ezt a levelet egy automata küldte önnek, kérjük ne válaszoljon rá.
+Ha kapcsolatba kíván lépni az üzemeltetővel megteheti <a href="http://kimittud.atlatszo.hu/help/contact">itt</a>
 
 

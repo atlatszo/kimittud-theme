@@ -1,3 +1,11 @@
+div#after_actions {
+width:611px;
+}
+
+div.describe_state_form {
+width: 570px;
+}
+
 div#subject_note{
 margin-top: 10px;
 }
