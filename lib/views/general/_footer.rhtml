@@ -1,0 +1,14 @@
+<div id="footer">
+  <div id="footer-left" style="width:49%; float:left; margin-right:20px; text-align:right;">
+    <p><%= render :partial => 'general/credits' %><p>
+    <p>Üzemelteti az <a href="http://atlatszo.hu/">atlatszo.hu</a>. <img src="/alavetelitheme/images/atlatszo-16.png" alt="atlatszo icon" class="twitter-icon"></p>
+    <p>Elindítását az <a href="http://www.soros.org/">Open Society Institute</a> támogatta</p>
+    <p>Nevezd meg! - Így add tovább! CC BY-SA 2.5<p>
+  </div>
+  <div id="foter-right" style="width:49%; float:right; text-align:left;">
+    <p> <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %><p>
+    <p><img src="/images/twitter-16.png" alt="twitter icon" class="twitter-icon"><a href="http://www.twitter.com/<%= MySociety::Config.get('TWITTER_USERNAME') %>"> <%= _("Follow us on twitter") %></a><p>
+    <p><img src="/alavetelitheme/images/facebook-16.png" alt="facebook icon" class="twitter-icon"><a href="http://www.facebook.com/kimittud"> Csatlakozzon hozzánk a facebook-on</a><p>
+  </div>
+</div>
+<div class="after-footer"></div>
