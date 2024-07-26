@@ -3225,7 +3225,7 @@ msgid "Summary is too short. Please be a little more descriptive about the infor
 msgstr ""
 
 msgid "Supported by <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a>"
-msgstr "Elindítását az <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a> támogatta"
+msgstr "Elindítását az <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a> támogatta 2012-ben. Felújítását az <a href=\"https://www.usaid.gov/\">USAID</a> támogatta 2024-ben."
 
 msgid "Suspended users cannot edit their profile"
 msgstr ""
