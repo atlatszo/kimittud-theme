@@ -7,9 +7,6 @@
   <li><%= link_to_unless_current _('help_officers'), help_officers_path %></li>
   <li><%= link_to_unless_current _('help_api'), help_api_path %></li>
   <li><%= link_to_unless_current _('advanced_search'), search_redirect_path %></li>
-  <% if feature_enabled?(:alaveteli_pro) %>
-    <li><%= link_to_unless_current _('help_pro'), help_pro_path %></li>
-  <% end %>
 </ul>
 
 <h2 id="contact" class="contact"><%= _('contact_title') %></h2>
