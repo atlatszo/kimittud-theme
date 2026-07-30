@@ -1203,7 +1203,7 @@ a.link_button_green_large {
   .social{
     li{
       a{
-        background:$heading-color;
+        font-weight: bold;
         padding:4px;
         display:inline-block;
         padding:12px;
@@ -1266,13 +1266,6 @@ a.link_button_green_large {
         display: block;
       }
     }
-
-    ul{
-      li {
-        width: 33%;
-      }
-    }
-
   }
 }
 .footer-last-wrapper, .credits{
