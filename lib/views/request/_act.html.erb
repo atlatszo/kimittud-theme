@@ -17,7 +17,7 @@
   <% li_share_link = "https://www.linkedin.com/sharing/share-offsite/?url=" << {
      :u => request.url
      }.to_query %>
-  <i class="act-link-icon--linkedin"></i>
+  <i class="act-link-icon act-link-icon--linkedin"></i>
   <%= link_to "Megosztás a Linkedinen",
               li_share_link,
               :onclick => track_analytics_event(
