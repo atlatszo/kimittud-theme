@@ -1,0 +1,40 @@
+<h2><%= _("Act on what you've learnt") %></h2>
+
+<div class="act_link">
+  <% share_link = "https://www.facebook.com/sharer/sharer.php?" << {
+        :u => request.url
+      }.to_query %>
+  <i class="act-link-icon act-link-icon--facebook"></i>
+  <%= link_to _("Share on Facebook"),
+              share_link,
+              :onclick => track_analytics_event(
+                AnalyticsEvent::Category::OUTBOUND,
+                AnalyticsEvent::Action::FACEBOOK_EXIT,
+                :label => "Request sidebar") %>
+</div>
+
+<div class="act_link">
+  <i class="act-link-icon act-link-icon--linkedin"></i>
+  <%= link_to "Megosztás a Linkedinen",
+              "https://linkedin.com/",
+              :onclick => track_analytics_event(
+                AnalyticsEvent::Category::OUTBOUND,
+                AnalyticsEvent::Action::LINKEDIN_EXIT,
+                :label => "Request sidebar") %>
+</div>
+
+<% if AlaveteliConfiguration::enable_widgets %>
+  <div class="act_link">
+    <i class="act-link-icon act-link-icon--widget"></i>
+    <%= link_to _("Create a widget for this request"), new_request_widget_path(info_request) %>
+  </div>
+<% end %>
+
+<% if AlaveteliConfiguration.donation_url.present? %>
+  <div class="act_link">
+    <i class="act-link-icon act-link-icon--donation"></i>
+    <%= link_to AlaveteliConfiguration.donation_url do %>
+      <%= _('<strong>Donate</strong> to {{site_name}}', site_name: site_name) %>
+    <% end %>
+  </div>
+<% end %>
