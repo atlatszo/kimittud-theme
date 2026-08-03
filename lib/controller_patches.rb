@@ -28,4 +28,29 @@ Rails.configuration.to_prepare do
       @internal_review = false
     end
   end
+
+  RequestController.class_eval do
+    def select_authority
+      # Check whether we force the user to sign in right at the start, or we allow her
+      # to start filling the request anonymously
+      if AlaveteliConfiguration.force_registration_on_new_request &&
+         !authenticated?
+        ask_to_login(
+          web: _('To send and publish your FOI request'),
+          email: _("Then you'll be allowed to send FOI requests."),
+          email_subject: _('Confirm your email address')
+        )
+        return
+      end
+      unless params[:query].nil?
+        params[:query]
+        flash[:search_params] = params.slice(:query, :bodies, :page)
+        # this line is changed to use the same SQL search as in admin pages,
+        # which gives better results than xapian. To be replaced with the future
+        # postgres based search system once available.
+        @xapian_search = PublicBody.with_query(query, 'all')
+      end
+      medium_cache
+    end
+  end
 end

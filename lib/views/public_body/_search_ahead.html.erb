@@ -1,0 +1,20 @@
+<% if !@xapian_search.nil? %>
+  <% if @xapian_search.count > 0 %>
+    <p><%= n_('{{count}} matching authority',
+              '{{count}} matching authorities',
+              @xapian_search.count,
+              :count => @xapian_search.count) %></p>
+  <% else %>
+    <p><%= _('No results found.') %></p>
+  <% end %>
+  <div class="authority_search_ahead_results_container">
+    <div id="authority_search_ahead_results">
+      <% for result in @xapian_search %>
+        <%= render :partial => 'public_body/body_listing_single',
+          :locals => { :public_body => result,
+                       :request_link => true } %>
+      <% end %>
+    </div>
+    <%= will_paginate WillPaginate::Collection.new(@page, @per_page, @xapian_search.count), :params => {:controller=>"request", :action => "select_authority", :pro => @in_pro_area ? "1" : "0"} %>
+  </div>
+<% end %>
