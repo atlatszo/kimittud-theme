@@ -48,7 +48,8 @@ Rails.configuration.to_prepare do
         # this line is changed to use the same SQL search as in admin pages,
         # which gives better results than xapian. To be replaced with the future
         # postgres based search system once available.
-        @page = params[:page]
+        Rails.logger.info("Params: #{params}")
+        @page = params[:page] || 1
         @per_page = 25
         @xapian_search = PublicBody.with_query(query, 'all')
                                    .paginate(page: params[:page], per_page: @per_page)
