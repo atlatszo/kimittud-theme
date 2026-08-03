@@ -43,7 +43,7 @@ Rails.configuration.to_prepare do
         return
       end
       unless params[:query].nil?
-        params[:query]
+        query = params[:query]
         flash[:search_params] = params.slice(:query, :bodies, :page)
         # this line is changed to use the same SQL search as in admin pages,
         # which gives better results than xapian. To be replaced with the future
