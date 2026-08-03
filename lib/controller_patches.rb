@@ -49,6 +49,7 @@ Rails.configuration.to_prepare do
         # which gives better results than xapian. To be replaced with the future
         # postgres based search system once available.
         @xapian_search = PublicBody.with_query(query, 'all')
+                                   .paginate(page: params[:page], per_page: 25)
       end
       medium_cache
     end
