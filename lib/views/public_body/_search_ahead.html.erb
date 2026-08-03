@@ -19,7 +19,7 @@
         } %>
       <% end %>
     </div>
-    <%= will_paginate WillPaginate::Collection.new(@page, 25, @xapian_search.count),
+    <%= will_paginate WillPaginate::Collection.new(1, 25, @xapian_search.count),
     params: {
       controller: "request",
       action: "select_authority",
