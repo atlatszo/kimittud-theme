@@ -990,7 +990,7 @@ msgid "Are you the owner of any commercial copyright on this page?"
 msgstr "Tulajdonosa az oldalon található bármely kereskedelmi célú szerzői jognak?"
 
 msgid "Ask EU Authorities"
-msgstr ""
+msgstr "Az EU-s intézményektől szeretne kérdezni?"
 
 msgid "Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries."
 msgstr "Kérése irányulhat <strong>konkrét</strong> dokumentumokra vagy információkra, de az oldal általános tudakozódásra nem alkalmas. "
@@ -2101,8 +2101,7 @@ msgstr "Hivatkozása ide "
 
 msgid "List of all authorities (CSV)"
 msgstr ""
-"Az rendszerünkben található adatgazdák listája (CSV) \n"
-"A KiMitTud-ban található adatgazdák letölthető listája (CSV) "
+"A KiMitTud-ban található adatgazdák letölthető listája (CSV)"
 
 msgid "Log in to download a zip file of {{info_request_title}}"
 msgstr "Jelentkezzen be, hogy a {{info_request_title}} tárgyú adatigénylési zip-fájlként letölthesse"
@@ -5038,8 +5037,8 @@ msgstr[1] ""
 
 msgid "{{count}} request."
 msgid_plural "{{count}} requests."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{{count}} igénylés"
+msgstr[1] "{{count}} igénylések"
 
 msgid "{{existing_request_user}} already created the same request on {{date}}. You can either view the <a href=\"{{existing_request}}\">existing request</a>, or edit the details below to make a new but similar request."
 msgstr ""
