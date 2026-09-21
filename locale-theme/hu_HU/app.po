@@ -5038,7 +5038,7 @@ msgstr[1] ""
 msgid "{{count}} request."
 msgid_plural "{{count}} requests."
 msgstr[0] "{{count}} igénylés"
-msgstr[1] "{{count}} igénylések"
+msgstr[1] "{{count}} igénylés"
 
 msgid "{{existing_request_user}} already created the same request on {{date}}. You can either view the <a href=\"{{existing_request}}\">existing request</a>, or edit the details below to make a new but similar request."
 msgstr ""
